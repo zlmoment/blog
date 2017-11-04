@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.29" />
+  <meta name="author" content="Zhaoyu Li">
+  <meta name="description" content="Ph.D. in Computer Science">
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat%3a400%2c700%7cRoboto%3a400%2c400italic%2c700%7cRoboto%2bMono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-99116200-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="" type="application/rss+xml" title="Zhaoyu Li">
+  <link rel="feed" href="" type="application/rss+xml" title="Zhaoyu Li">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://zhaoyu.li/post/paper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model/">
+
+  
+
+  <title>Paper note - Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model | Zhaoyu Li</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Zhaoyu Li
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/research">
+            
+            <span>Research</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/vitae">
+            
+            <span>Vitae</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/post">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            More
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item">
+              <a href="/algorithms">
+                
+                <span>Algorithms</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/certificates">
+                
+                <span>Course Certificates</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/more">
+                
+                <span>More About Me</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="universal-wrapper">
+    <h1 itemprop="name">Paper note - Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-09-10 00:34:00 &#43;0000 UTC" itemprop="datePublished">
+      Sun, Sep 10, 2017
+    </time>
+  </span>
+
+  
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/paper-note">paper note</a
+    >, 
+    
+    <a href="/tags/contact-prediction">contact prediction</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Paper%20note%20-%20Accurate%20De%20Novo%20Prediction%20of%20Protein%20Contact%20Map%20by%20Ultra-Deep%20Learning%20Model&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2fpaper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzhaoyu.li%2fpost%2fpaper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2fpaper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model%2f&amp;title=Paper%20note%20-%20Accurate%20De%20Novo%20Prediction%20of%20Protein%20Contact%20Map%20by%20Ultra-Deep%20Learning%20Model"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fzhaoyu.li%2fpost%2fpaper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model%2f&amp;title=Paper%20note%20-%20Accurate%20De%20Novo%20Prediction%20of%20Protein%20Contact%20Map%20by%20Ultra-Deep%20Learning%20Model"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Paper%20note%20-%20Accurate%20De%20Novo%20Prediction%20of%20Protein%20Contact%20Map%20by%20Ultra-Deep%20Learning%20Model&amp;body=https%3a%2f%2fzhaoyu.li%2fpost%2fpaper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h3>Table of Contents</h3>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#contact-definition">Contact definition</a></li>
+<li><a href="#existing-contact-prediction-methods">Existing contact prediction methods</a></li>
+<li><a href="#intuition">Intuition</a></li>
+<li><a href="#input-features">Input features</a></li>
+<li><a href="#network-structure">Network Structure</a></li>
+<li><a href="#conversion-of-sequential-features-to-pairwise-features">Conversion of sequential features to pairwise features</a></li>
+<li><a href="#loss-function">Loss function</a></li>
+<li><a href="#regularization-and-optimization">Regularization and optimization</a></li>
+<li><a href="#proteins-of-different-lengths">Proteins of different lengths</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#discussion">Discussion</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+<p>For contact prediction, direct evolutionary coupling analysis (DCA). However, <strong>DCA</strong> is effective on only some proteins with a very large number of sequence homologs. Paper link is <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005324" target="_blank">here</a>.</p>
+
+<h3 id="contact-definition">Contact definition</h3>
+
+<hr />
+
+<p>Two residues form a contact if they are spatially proximal in the native structure, i.e., the Euclidean distance of their $C_\beta$ atoms less than 8Å.</p>
+
+<p>We define that a contact is short-, medium- and long-range when the sequence distance of the two residues in a contact falls into [6, 11], [12, 23], and [24,], respectively.</p>
+
+<h3 id="existing-contact-prediction-methods">Existing contact prediction methods</h3>
+
+<hr />
+
+<p>Existing contact prediction methods roughly belong to two categories: <strong>evolutionary coupling analysis (ECA)</strong> and <strong>supervised machine learning</strong>.</p>
+
+<p>ECA predicts contacts by identifying co-evolved residues in a protein, such as EVfold, PSICOV, CCMpred, Gremlin, plmDCA. DCA usually needs a large number of sequence homologs. Supervised machine learning predicts contacts from a variety of information, e.g., SVMSEQ, CMAPpro, PconsC2, MetaPSICOV, PhyCMAP and CoinDCA-NN. Among them, PconsC2, CoinDCA-NN and MetaPSICOV are based on neural network.</p>
+
+<h3 id="intuition">Intuition</h3>
+
+<hr />
+
+<p>If we treat a protein contact map as an <strong>image</strong>, then protein contact prediction is similar to (but not exactly same as) pixel-level image labeling. There are some obvious differences:</p>
+
+<ul>
+<li>Contact map can&rsquo;t be resized</li>
+<li>Contact map has more input features</li>
+<li>Contact map output labels are extreamly unbalanced</li>
+</ul>
+
+<h3 id="input-features">Input features</h3>
+
+<hr />
+
+<p><strong>1D network</strong> (it learns the sequential context of a residue):</p>
+
+<ul>
+<li>Sequence profile (PSSM with dimension $L \times 20$)</li>
+<li>Predicted 3-state secondary structure ($L \times 3$)</li>
+<li>Predicted 3-state solvent accessibility ($L \times 3$)</li>
+</ul>
+
+<p><strong>2D network</strong> (it learns contact occurrence patterns or high-order residue correlation):</p>
+
+<ul>
+<li>Output from 1D network (The output of this 1D convolutional network is converted to a 2-dimensional (2D) matrix by outer concatenation (an operation similar to outer product))</li>
+<li>Direct co-evolutionary information (from CCMPred)</li>
+<li>Pairwise contact</li>
+<li>Distance potential</li>
+</ul>
+
+<p><strong>Process:</strong></p>
+
+<ul>
+<li><p>For a <strong>training</strong> protein, we run PSI-BLAST (with E-value 0.001 and 3 iterations) to search the NR (non-redundant) database (October 2012) to find its sequence homologs, and then build its MSA, PSSM and predict other features (SS, SA).</p></li>
+
+<li><p>For a <strong>testing</strong> protein, we generate <strong>4</strong> different MSAs by running HHblits (with 3 iterations and E-value set to 0.001 and 1, respectively) to search through the <strong>uniprot20 HMM</strong> library released in November 2015 and February 2016. From each individual MSA, we derive one PSSM and predict the SS and SA accordingly. That is, for each test protein we generate 4 sets of input features and accordingly 4 different contact predictions. Then we average these 4 predictions to obtain the final contact prediction. This averaged contact prediction is about 1–2% better than that predicted from a single set of features.</p></li>
+</ul>
+
+<p><strong>The impact of different input features:</strong></p>
+
+<ol>
+<li>Co-evolution strength from CCMPred (accuracy ~0.15 worse)</li>
+<li>The depth of our deep model (9 and 30 layers have top L/10 accuracy ~0.1 and ~0.03 worse than a 60-layer model)</li>
+<li>The pairwise contact potential and mutual information (accuracy 0.02-0.03)</li>
+<li>The secondary structure and solvent accessibility (accuracy 0.01-0.02)</li>
+</ol>
+
+<h3 id="network-structure">Network Structure</h3>
+
+<hr />
+
+<p><img src="/img/blog/contact-1.PNG" alt="" /></p>
+
+<p>For the $2^{nd}$ network, for a residual block, $X _ l$ and $X _ {l+1}$ represent pairwise features with dimension $L \times L \times n _ l$ and $L \times L \times n _ {l+1}$. Typically, we enforce $n _ l ≤ n _ {l+1} $ since one position at a higher level is supposed to carry more information. If dimension doesn&rsquo;t match, pad zeros.</p>
+
+<p>Filter size for 1D is $17$, for 2D is $3 \times 3$ or $5 \times 5$.</p>
+
+<p>Batch normalization is before activation, mean 0, standard deviation 1.</p>
+
+<p>Our experimental results show that with ~60 hidden neurons at each position and ~60 convolution layers for the $2^{nd}$ residual network, our model can yield pretty good performance.</p>
+
+<h3 id="conversion-of-sequential-features-to-pairwise-features">Conversion of sequential features to pairwise features</h3>
+
+<hr />
+
+<p>let $ v = \{ v_1, v_2, &hellip;, v_i, &hellip;, v_L \} $ be the final output of the first network, for a pair of residues $i$ and $j$, we concatenate $v _ i$, $v _ {\frac{(i+j)}{2}}$ and $v _ j$ to a single vector and use it as one input feature of this residue pair.</p>
+
+<h3 id="loss-function">Loss function</h3>
+
+<hr />
+
+<p>Since the ratio of contacts among all the residue pairs is very small, to make the training algorithm converge fast, we assign a larger weight to the residue pairs forming a contact. The weight is assigned such that the total weight assigned to contacts is approximately <sup>1</sup>&frasl;<sub>8</sub> of the number of non-contacts in the training set.</p>
+
+<h3 id="regularization-and-optimization">Regularization and optimization</h3>
+
+<hr />
+
+<p>To prevent overfitting, we employ $L_2-norm$ regularization. We use SGD algorithm to minimize the objective function.</p>
+
+<p>It takes 20–30 epochs to obtain a very good solution. The whole algorithm is implemented by Theano.</p>
+
+<h3 id="proteins-of-different-lengths">Proteins of different lengths</h3>
+
+<hr />
+
+<p>We sort all training proteins by length and group proteins of similar lengths into minibatches. In the case that they do not, we add zero padding to shorter proteins.</p>
+
+<p>We have tested minibatches with only a single protein or with several proteins. Both work well. However, it is much easier to implement minibatches with only a single protein.</p>
+
+<h3 id="data">Data</h3>
+
+<hr />
+
+<p>Our training set is a subset of PDB25 created in February 2015. PDB25 list: <a href="http://dunbrack.fccc.edu/PISCES.php" target="_blank">click me</a></p>
+
+<p>We exclude a protein from the training set if it satisfies one of the following conditions:</p>
+
+<ul>
+<li>sequence length smaller than 26 or larger than 700</li>
+<li>resolution worse than 2.5Å</li>
+<li>has domains made up of multiple protein chains</li>
+<li>no DSSP information</li>
+<li>there is inconsistency between its PDB, DSSP and ASTRAL sequences</li>
+</ul>
+
+<p>To remove redundancy with the test sets, we exclude any training proteins sharing &gt;25% sequence identity or having BLAST E-value &lt;0.1 with any test proteins.</p>
+
+<p>In total there are 6767 proteins in our training set, from which we have trained 7 different models. For each model, we randomly sampled ~6000 proteins from the training set to train the model and used the remaining proteins to validate the model and determine the hyper-parameters (i.e., regularization factor). The final model is the average of these 7 models.</p>
+
+<h3 id="results">Results</h3>
+
+<hr />
+
+<p>Here is the result on only the CASP11 test proteins. For more results, <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005324#sec006" target="_blank">click me</a>.</p>
+
+<p><img src="/img/blog/contact-2.PNG" alt="" /></p>
+
+<p>Note: compared to another paper using DCA only <a href="https://papers.nips.cc/paper/6488-protein-contact-prediction-from-amino-acid-co-evolution-using-convolutional-networks-for-graph-valued-images.pdf" target="_blank">link</a>.</p>
+
+<p><img src="/img/blog/contact-3.PNG" alt="" /></p>
+
+<p>Some other conculusions:</p>
+
+<ul>
+<li>When a query protein has no close templates, our contact-assisted modeling may work better than template-based modeling;</li>
+<li>Contact-assisted modeling shall be particularly useful for membrane proteins;</li>
+<li>Our deep learning model does not predict contacts by simply copying contacts from the training proteins since our predicted contacts may result in much better 3D models than homology modeling built from the training proteins of our deep model.</li>
+</ul>
+
+<h3 id="discussion">Discussion</h3>
+
+<hr />
+
+<ul>
+<li>The latest PDB25 has more than 10,000 proteins, which can provide many more training proteins.</li>
+<li>We may feed our predicted contacts to Rosetta to build 3D models. Compared to CNS, Rosetta makes use of <strong>energy function</strong> and <strong>more local structural restraints</strong> through fragment assembly.</li>
+<li>Instead of predicting contacts, our deep learning model can predict inter-residue distance distribution (i.e., distance matrix), which provides finer-grained information than contact maps.</li>
+</ul>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="universal-wrapper">
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/paper-note-globally-and-locally-consistent-image-completion/">Paper note - Globally and Locally Consistent Image Completion</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://zhaoyu.li/post/paper-note-globally-and-locally-consistent-image-completion/"><span
+      aria-hidden="true">&larr;</span> Paper note - Globally and Locally Consistent Image Completion</a></li>
+    
+
+    
+    <li class="next"><a href="https://zhaoyu.li/post/paper-note-densenet/">Paper note - DenseNet <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="universal-wrapper">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zl-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Zhaoyu Li &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+  </body>
+</html>
+

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.29" />
+  <meta name="author" content="Zhaoyu Li">
+  <meta name="description" content="Ph.D. in Computer Science">
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat%3a400%2c700%7cRoboto%3a400%2c400italic%2c700%7cRoboto%2bMono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-99116200-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="" type="application/rss+xml" title="Zhaoyu Li">
+  <link rel="feed" href="" type="application/rss+xml" title="Zhaoyu Li">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://zhaoyu.li/post/hhsuite_notes/">
+
+  
+
+  <title>Some Notes about HHSuite | Zhaoyu Li</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Zhaoyu Li
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/research">
+            
+            <span>Research</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/vitae">
+            
+            <span>Vitae</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/post">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            More
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item">
+              <a href="/algorithms">
+                
+                <span>Algorithms</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/certificates">
+                
+                <span>Course Certificates</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/more">
+                
+                <span>More About Me</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="universal-wrapper">
+    <h1 itemprop="name">Some Notes about HHSuite</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-09-24 02:51:00 &#43;0000 UTC" itemprop="datePublished">
+      Sun, Sep 24, 2017
+    </time>
+  </span>
+
+  
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/hhsearch">hhsearch</a
+    >, 
+    
+    <a href="/tags/hhsuite">hhsuite</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Some%20Notes%20about%20HHSuite&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2fhhsuite_notes%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzhaoyu.li%2fpost%2fhhsuite_notes%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2fhhsuite_notes%2f&amp;title=Some%20Notes%20about%20HHSuite"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fzhaoyu.li%2fpost%2fhhsuite_notes%2f&amp;title=Some%20Notes%20about%20HHSuite"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Some%20Notes%20about%20HHSuite&amp;body=https%3a%2f%2fzhaoyu.li%2fpost%2fhhsuite_notes%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h3>Table of Contents</h3>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#hmms">HMMs</a></li>
+<li><a href="#hhsuite-database">HHSuite Database</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#what-is-hmm-hmm-comparison-and-why-is-it-so-powerful">What is HMM-HMM comparison and why is it so powerful?</a></li>
+<li><a href="#when-can-the-hhsuite-be-useful-for-me">When can the HHsuite be useful for me?</a></li>
+<li><a href="#how-can-i-verify-if-a-database-match-is-homologous">How can I verify if a database match is homologous?</a></li>
+<li><a href="#should-i-use-the-global-option-to-build-msas">Should I use the <code>-global</code> option to build MSAs</a></li>
+<li><a href="#why-do-i-get-different-results-using-hhblits-and-hhsearch">Why do I get different results using hhblits and hhsearch</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+<p>The following summary is mainly from the HHsuite official user guide. For complete guide please refer to <a href="https://github.com/soedinglab/hh-suite" target="_blank">link</a>.</p>
+
+<h3 id="summary">Summary</h3>
+
+<hr />
+
+<p><strong>HHsearch</strong> takes as input a multiple sequence alignment (MSA) or profile HMM and searches a database of HMMs (e.g. PDB, Pfam, or InterPro) for homologous proteins. <strong>HHblits</strong> can build highquality MSAs starting from single sequences or from MSAs. Compared to PSIBLAST, HHblits is faster, up to twice as sensitive and produces more accurate alignments.</p>
+
+<h3 id="hmms">HMMs</h3>
+
+<hr />
+
+<p>HMMs: profile hidden Markov models. Profile HMMs are a concise representation of multiple sequence alignments (MSAs).</p>
+
+<p>A profile HMM is much better suited than a single sequence to find homologous sequences and calculate accurate alignments. By representing both the query sequence and the database sequences by profile HMMs, HHsearch and HHblits are more sensitive for detecting and aligning remotely homologous proteins than methods based on pairwise sequence comparison or profile-sequence comparison.</p>
+
+<p>Hblits can build high-quality multiple sequence alignments (MSAs) starting from a single sequence or from an MSA.</p>
+
+<p>HHsearch takes as input an MSA (e.g. built by HHblits) or a profile HMM and searches a database of HMMs for homologous proteins.</p>
+
+<h3 id="hhsuite-database">HHSuite Database</h3>
+
+<hr />
+
+<p>The following HHsuite databases, which can be searched by HHblits and HHsearch, can be downloaded at <a href="http://wwwuser.gwdg.de/~compbiol/data/hhsuite/databases/hhsuite_dbs/" target="_blank">here</a>:</p>
+
+<pre><code class="language-text">1 uniprot20 based on UniProt db from EBI/SIB/PIR, clustered to 20 % seq. identity
+3 pdb70 representatives from PDB (70% max. sequence identity), updated weekly
+4 scop70 representatives from SCOP (70% max. sequence identity)
+5 pfamA Pfam A database from Sanger Inst., http://www.sanger.ac.uk/Software/Pfam/
+</code></pre>
+
+<p>Note that, in order to generate multiple sequence alignments (MSAs) <strong>by iterative sequence searching</strong> using <strong>HHblits</strong>, you need to search the uniprot20, since since only this databases cover essentially all of the sequence universe. The pdb70, pfamA, and pdb70 are not appropriate to build MSAs by iterative searches.</p>
+
+<p>In the pdb70 and scop70 databases, each master sequence from the original sequence database is represented by an MSA. The MSAs are built by HHblits searches starting with the master sequence as a query. As the sequences in this type of database do not cover the entire sequence space, they are not suited for iterative searches.</p>
+
+<h3 id="programs">Programs</h3>
+
+<hr />
+
+<pre><code class="language-text">hhblits        (Iteratively) search an HHsuite database with a query sequence or MSA
+hhsearch       Search an HHsuite database with a query MSA or HMM
+hhmake         Build an HMM from an input MSA
+hhfilter       Filter an MSA by max sequence identity, coverage, and other criteria
+hhalign        Calculate pairwise alignments etc. for two HMMs/MSAs
+hhconsensus    Calculate the consensus sequence for an A3M/FASTA input file
+
+reformat.pl    Reformat one or many MSAs
+addss.pl       Add PSIPRED predicted secondary structure to an MSA or HHM file
+hhmakemodel.pl Generate MSAs or coarse 3D models from HHsearch or HHblits results
+hhmakemodel.py Generates coarse 3D models from HHsearch or HHblits results and modifies cif files such that they are compatible with MODELLER
+hhsuitedb.py   Build HHsuite database with prefiltering, packed MSA/HMM, and index files
+splitfasta.pl  Split a multiple-sequence FASTA file into multiple single-sequence files
+renumberpdb.pl Generate PDB file with indices renumbered to match input sequence indices 
+Align.pm       Utility package for local and global sequence-sequence alignment
+HHPaths.pm     Configuration file with paths to the PDB, BLAST, PSIPRED etc.
+mergeali.pl    Merge MSAs in A3M format according to an MSA of their seed sequences
+pdb2fasta.pl   Generate FASTA sequence file from SEQRES records of globbed pdb files
+cif2fasta.py   Generate a FASTA sequence from the pdbx_seq_one_letter_code entry of the entity_poly of globbed cif files
+pdbfilter.pl   Generate representative set of PDB/SCOP sequences from pdb2fasta.pl output
+pdbfilter.py   Generate representative set of PDB/SCOP sequences from cif2fasta.py output
+</code></pre>
+
+<h3 id="usage">Usage</h3>
+
+<hr />
+
+<p>If the input file is an MSA or a single sequence, HHsearch calculates an HMM from it and then aligns this query HMM to all HMMs in the database using the Viterbi algorithm. The HHblits tool can be used in much the same way as HHsearch. It takes the same input data and produces a results file in the same format as HHsearch. Due to its fast prefilter, HHblits runs between 30 and 3000 times faster than HHsearch at the cost of only a few percent lower sensitivity.</p>
+
+<p><strong>Generating a multiple sequence alignment using HHblits</strong></p>
+
+<p>To generate an MSA for a sequence or initial MSA in query.a3m, the database to be searched should cover the entire sequence space, such as uniprot20 or nr20. The option <code>-oa3m &lt;msa_file&gt;</code> tells HHblits to generate an output MSA from the significant hits, <code>-n 1</code> specifies a single search.</p>
+
+<pre><code>$ hhblits -cpu 4 -i data/query.seq -d dbs/uniprot20 -oa3m query.a3m -n 1
+</code></pre>
+
+<p>After the search, query.a3m will contain the MSA in A3M format.</p>
+
+<p>We could do a second search iteration, starting with the MSA from the previous search, to add more sequences. Since the MSA generated after the previous search contains more information than the single sequence in query.seq, searching with this MSA will probably result in many more homologous database matches.</p>
+
+<pre><code>$ hhblits -cpu 4 -i query.a3m -d dbs/uniprot20 -oa3m query.a3m -n 
+</code></pre>
+
+<p>Instead, we could directly perform two search iterations starting from query.seq:</p>
+
+<pre><code>$ hhblits -cpu 4 -i data/query.seq -d dbs/uniprot20 -oa3m query.a3m -n 2
+</code></pre>
+
+<p>In practice, it is recommended to use between <strong>1 and 4</strong> iterations for building MSAs, depending on the trade-off between reliability and specificity on one side and sensitivity for remotely homologous sequences on the other side. The more search iterations are done, the higher will be the risk of non-homologous sequences or sequence segments entering the MSA and recruiting more of their kind in subsequent iterations.</p>
+
+<h3 id="what-is-hmm-hmm-comparison-and-why-is-it-so-powerful">What is HMM-HMM comparison and why is it so powerful?</h3>
+
+<hr />
+
+<p>When searching for remote homologs, it is wise to make use of as much information about the query and database proteins as possible in order to better distinguish true from false positives and to produce optimal alignments. This is the reason why sequence-sequence comparison is inferior to profile-sequence comparison.</p>
+
+<p>Profile Hidden Markov Models (HMMs) are similar to simple sequence profiles, but in addition to the amino acid frequencies in the columns of a multiple sequence alignment they contain information about the frequency of inserts and deletions at each column.</p>
+
+<h3 id="when-can-the-hhsuite-be-useful-for-me">When can the HHsuite be useful for me?</h3>
+
+<hr />
+
+<p>In cases where conventional sequence search methods fail, HHblits and HHsearch quite often allow to make inferences from more remotely homologous relationships.</p>
+
+<h3 id="how-can-i-verify-if-a-database-match-is-homologous">How can I verify if a database match is homologous?</h3>
+
+<hr />
+
+<p><strong>Check probability and E-value:</strong></p>
+
+<p>Sequence identity is therefore <strong>not</strong> an appropriate measure of relatedness anymore. The <strong>estimated probability of the template</strong> to be (at least partly) homologous to your query sequence is the most important criterion to decide whether a template HMM is actually homologous or just a high-scoring chance hit.</p>
+
+<p>The <strong>E-value</strong> is an alternative measure of statistical significance. It tells you how many chance hits with a score better than this would be expected if the database contained only hits unrelated to the query. At E-values below one, matches start to get marginally significant.</p>
+
+<p>The E-value gives the average number of false positives (’wrong hits’) with a score better than the one for the template when scanning the database. It is a measure of reliability: Evalues near to 0 signify a very reliable hit. An E-value of 10 means about 10 wrong hits are expected to be found in the database with a score at least this good.</p>
+
+<p>The <strong>probability</strong> is a more sensitive measure than the <strong>E-value</strong>.</p>
+
+<p><strong>Others:</strong></p>
+
+<p>See user guide for details:</p>
+
+<ul>
+<li>Check if homology is biologically suggestive or at least reasonable</li>
+<li>Check secondary structure similarity</li>
+<li>Check relationship among top hits</li>
+<li>Check for possible conserved motifs</li>
+<li>Check residues and role of conserved motifs</li>
+<li>Check query and template alignments</li>
+<li>Realign with other parameters</li>
+<li>Build the query and/or database MSAs more aggressively</li>
+<li>Try out other tools</li>
+<li>Verify predictions experimentally</li>
+</ul>
+
+<h3 id="should-i-use-the-global-option-to-build-msas">Should I use the <code>-global</code> option to build MSAs</h3>
+
+<hr />
+
+<p><strong>Never use -global when building MSAs by iterative searches with HHblits</strong>. Remember that global alignments are very greedy alignments, where alignments stretch to the ends of either query of database HMM, no matter what. Global alignments will therefore often lead to non-homologous segments getting included in the MSA, which is catastrophic, as these false segments will lead to many false positive matches when searching with this MSA. But you may use -global when searching (with a single iteration) for global matches of your query HMMs through your customized HHsuite database, for example.</p>
+
+<p>For what is the local and global alignments, see <a href="https://biology.stackexchange.com/questions/11263/what-is-the-difference-between-local-and-global-sequence-alignments" target="_blank">here</a>.</p>
+
+<h3 id="why-do-i-get-different-results-using-hhblits-and-hhsearch">Why do I get different results using hhblits and hhsearch</h3>
+
+<hr />
+
+<p>There are two reasons. First, some hits that hhsearch shows might not have passed the prefilter in hhblits.</p>
+
+<p>Second, while the probabilities and P-values of hhblits and hhsearch should be the identical for the same matches, the E-values are only similar. The reason is that hhblits heuristically combines the E-values of the second prefilter with the E-values from the full HMM-HMM Viterbi alignment into total E-values. These E-values are slightly better in distinguishing true from false hits, because they combine the partly independent information from two comparisons.</p>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://zhaoyu.li/post/auto-reverse-ssh/"><span
+      aria-hidden="true">&larr;</span> A Simple Bash Script to Reverse SSH Tunnel Automatically</a></li>
+    
+
+    
+    <li class="next"><a href="https://zhaoyu.li/post/introduction-to-contact-prediction/">Introduction to Contact Prediction <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="universal-wrapper">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zl-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Zhaoyu Li &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+  </body>
+</html>
+

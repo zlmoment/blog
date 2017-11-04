@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.29" />
+  <meta name="author" content="Zhaoyu Li">
+  <meta name="description" content="Ph.D. in Computer Science">
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat%3a400%2c700%7cRoboto%3a400%2c400italic%2c700%7cRoboto%2bMono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-99116200-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="" type="application/rss+xml" title="Zhaoyu Li">
+  <link rel="feed" href="" type="application/rss+xml" title="Zhaoyu Li">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://zhaoyu.li/post/data-preprocessing/">
+
+  
+
+  <title>Data Preprocessing | Zhaoyu Li</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Zhaoyu Li
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/research">
+            
+            <span>Research</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/vitae">
+            
+            <span>Vitae</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/post">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            More
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item">
+              <a href="/algorithms">
+                
+                <span>Algorithms</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/certificates">
+                
+                <span>Course Certificates</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/more">
+                
+                <span>More About Me</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="universal-wrapper">
+    <h1 itemprop="name">Data Preprocessing</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-10-07 12:58:00 &#43;0000 UTC" itemprop="datePublished">
+      Sat, Oct 7, 2017
+    </time>
+  </span>
+
+  
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/data">data</a
+    >, 
+    
+    <a href="/tags/data-analytics">data analytics</a
+    >, 
+    
+    <a href="/tags/data-prepocessing">data prepocessing</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Data%20Preprocessing&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2fdata-preprocessing%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzhaoyu.li%2fpost%2fdata-preprocessing%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2fdata-preprocessing%2f&amp;title=Data%20Preprocessing"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fzhaoyu.li%2fpost%2fdata-preprocessing%2f&amp;title=Data%20Preprocessing"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Data%20Preprocessing&amp;body=https%3a%2f%2fzhaoyu.li%2fpost%2fdata-preprocessing%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h3>Table of Contents</h3>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#standardization-or-mean-removal-and-variance-scaling">Standardization, or mean removal and variance scaling</a></li>
+<li><a href="#scaling-features-to-a-range">Scaling features to a range</a></li>
+<li><a href="#normalization">Normalization</a></li>
+<li><a href="#binarization">Binarization</a></li>
+<li><a href="#encoding-categorical-features-to-onehot">Encoding categorical features to onehot</a></li>
+<li><a href="#label-encoding">Label encoding</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+<p>Some common ways to do data preprocessing.</p>
+
+<h3 id="standardization-or-mean-removal-and-variance-scaling">Standardization, or mean removal and variance scaling</h3>
+
+<hr />
+
+<p><em>If your data contains many outliers, scaling using the mean and variance of the data is likely to not work very well.</em></p>
+
+<p><strong>Standardization</strong> of datasets is <strong>a common requirement</strong> for many machine learning estimators; estimators might behave badly if the individual features is not in standard normally distributed data: i.e. Gaussian with <strong>zero mean and unit variance</strong>.</p>
+
+<p>In practice we just remove the mean value of <strong>each feature</strong>, then scale it by dividing non-constant features by their <strong>standard deviation</strong>.</p>
+
+<p>If a feature has a variance that is orders of magnitude larger than others, it might <strong>dominate the objective function</strong> and <strong>make the estimator unable to learn</strong> from other features correctly as expected.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; from sklearn import preprocessing
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; X_train = np.array([[ 1., -1.,  2.],
+...                     [ 2.,  0.,  0.],
+...                     [ 0.,  1., -1.]])
+&gt;&gt;&gt; X_scaled = preprocessing.scale(X_train)
+
+&gt;&gt;&gt; X_scaled                                          
+array([[ 0.  ..., -1.22...,  1.33...],
+       [ 1.22...,  0.  ..., -0.26...],
+       [-1.22...,  1.22..., -1.06...]])
+
+# The scaled data has zero mean and unit variance:
+
+&gt;&gt;&gt; X_scaled.mean(axis=0)
+array([ 0.,  0.,  0.])
+
+&gt;&gt;&gt; X_scaled.std(axis=0)
+array([ 1.,  1.,  1.])
+</code></pre>
+
+<p>We can use <code>StandardScaler</code> to do standardization on training set, then later apply it to the testing set.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; scaler = preprocessing.StandardScaler().fit(X_train)
+&gt;&gt;&gt; scaler.transform(X_train)                           
+array([[ 0.  ..., -1.22...,  1.33...],
+       [ 1.22...,  0.  ..., -0.26...],
+       [-1.22...,  1.22..., -1.06...]])
+
+&gt;&gt;&gt; X_test = [[-1., 1., 0.]]
+&gt;&gt;&gt; scaler.transform(X_test)                
+array([[-2.44...,  1.22..., -0.26...]])
+</code></pre>
+
+<h3 id="scaling-features-to-a-range">Scaling features to a range</h3>
+
+<hr />
+
+<p>An alternative standardization is scaling features to lie between a given minimum and maximum value, often between 0 and 1.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; X_train = np.array([[ 1., -1.,  2.],
+...                     [ 2.,  0.,  0.],
+...                     [ 0.,  1., -1.]])
+...
+&gt;&gt;&gt; min_max_scaler = preprocessing.MinMaxScaler()
+&gt;&gt;&gt; X_train_minmax = min_max_scaler.fit_transform(X_train)
+&gt;&gt;&gt; X_train_minmax
+array([[ 0.5       ,  0.        ,  1.        ],
+       [ 1.        ,  0.5       ,  0.33333333],
+       [ 0.        ,  1.        ,  0.        ]])
+</code></pre>
+
+<h3 id="normalization">Normalization</h3>
+
+<hr />
+
+<p>Normalization is to normalize samples individually to unit norm (<strong>Each sample (i.e. each row of the data matrix) with at least one non zero component is rescaled independently of other samples so that its norm ($l_1$ or $l_2$) equals one.</strong>). This process can be useful if you plan to use a quadratic form such as the dot-product or any other kernel to quantify the similarity of any pair of samples.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; X = [[ 1., -1.,  2.],
+...      [ 2.,  0.,  0.],
+...      [ 0.,  1., -1.]]
+&gt;&gt;&gt; X_normalized = preprocessing.normalize(X, norm='l2')
+
+&gt;&gt;&gt; X_normalized                                      
+array([[ 0.40..., -0.40...,  0.81...],
+       [ 1.  ...,  0.  ...,  0.  ...],
+       [ 0.  ...,  0.70..., -0.70...]])
+</code></pre>
+
+<h3 id="binarization">Binarization</h3>
+
+<hr />
+
+<p>Give a threshold, and get boolean values of each feature.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; binarizer = preprocessing.Binarizer(threshold=1.1)
+&gt;&gt;&gt; binarizer.transform(X)
+array([[ 0.,  0.,  1.],
+       [ 1.,  0.,  0.],
+       [ 0.,  0.,  0.]])
+</code></pre>
+
+<h3 id="encoding-categorical-features-to-onehot">Encoding categorical features to onehot</h3>
+
+<hr />
+
+<p>Infer categories from input automatically:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; enc.fit([[0, 0, 3], [1, 1, 0], [0, 2, 1], [1, 0, 2]])  
+OneHotEncoder(categorical_features='all', dtype=&lt;... 'numpy.float64'&gt;,
+       handle_unknown='error', n_values='auto', sparse=True)
+&gt;&gt;&gt; enc.transform([[0, 1, 3]]).toarray()
+array([[ 1.,  0.,  0.,  1.,  0.,  0.,  0.,  0.,  1.]])
+</code></pre>
+
+<p>If the training data has missing categorical features, one has to explicitly set <code>n_values</code>:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; enc = preprocessing.OneHotEncoder(n_values=[2, 3, 4])
+&gt;&gt;&gt; # Note that there are missing categorical values for the 2nd and 3rd
+&gt;&gt;&gt; # features
+&gt;&gt;&gt; enc.fit([[1, 2, 3], [0, 2, 0]])  
+OneHotEncoder(categorical_features='all', dtype=&lt;... 'numpy.float64'&gt;,
+       handle_unknown='error', n_values=[2, 3, 4], sparse=True)
+&gt;&gt;&gt; enc.transform([[1, 0, 0]]).toarray()
+array([[ 0.,  1.,  1.,  0.,  0.,  1.,  0.,  0.,  0.]])
+</code></pre>
+
+<h3 id="label-encoding">Label encoding</h3>
+
+<hr />
+
+<p>Encode labels with value between <code>0</code> and <code>n_classes-1</code>.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; from sklearn import preprocessing
+&gt;&gt;&gt; le = preprocessing.LabelEncoder()
+&gt;&gt;&gt; le.fit([1, 2, 2, 6])
+LabelEncoder()
+&gt;&gt;&gt; le.classes_
+array([1, 2, 6])
+&gt;&gt;&gt; le.transform([1, 1, 2, 6]) 
+array([0, 0, 1, 2]...)
+# Transform labels back to original encoding.
+&gt;&gt;&gt; le.inverse_transform([0, 0, 1, 2])
+array([1, 1, 2, 6])
+</code></pre>
+
+<p>It can also be used to transform non-numerical labels:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; le = preprocessing.LabelEncoder()
+&gt;&gt;&gt; le.fit([&quot;paris&quot;, &quot;paris&quot;, &quot;tokyo&quot;, &quot;amsterdam&quot;])
+LabelEncoder()
+&gt;&gt;&gt; list(le.classes_)
+['amsterdam', 'paris', 'tokyo']
+&gt;&gt;&gt; le.transform([&quot;tokyo&quot;, &quot;tokyo&quot;, &quot;paris&quot;]) 
+array([2, 2, 1]...)
+&gt;&gt;&gt; list(le.inverse_transform([2, 2, 1]))
+['tokyo', 'tokyo', 'paris']
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+
+<hr />
+
+<ol>
+<li><a href="http://scikit-learn.org/stable/modules/preprocessing.html" target="_blank">http://scikit-learn.org/stable/modules/preprocessing.html</a></li>
+<li><a href="http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html" target="_blank">http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html</a></li>
+</ol>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://zhaoyu.li/post/introduction-to-contact-prediction/"><span
+      aria-hidden="true">&larr;</span> Introduction to Contact Prediction</a></li>
+    
+
+    
+    <li class="next"><a href="https://zhaoyu.li/post/how-to-implement-meshgrid-in-pytorch/">How to Implement Meshgrid in PyTorch <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="universal-wrapper">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zl-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Zhaoyu Li &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+  </body>
+</html>
+

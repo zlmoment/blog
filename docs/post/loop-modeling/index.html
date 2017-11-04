@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.29" />
+  <meta name="author" content="Zhaoyu Li">
+  <meta name="description" content="Ph.D. in Computer Science">
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat%3a400%2c700%7cRoboto%3a400%2c400italic%2c700%7cRoboto%2bMono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-99116200-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="" type="application/rss+xml" title="Zhaoyu Li">
+  <link rel="feed" href="" type="application/rss+xml" title="Zhaoyu Li">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://zhaoyu.li/post/loop-modeling/">
+
+  
+
+  <title>Paper note - Loop Modeling | Zhaoyu Li</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Zhaoyu Li
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/research">
+            
+            <span>Research</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/vitae">
+            
+            <span>Vitae</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/post">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            More
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="nav-item">
+              <a href="/algorithms">
+                
+                <span>Algorithms</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/certificates">
+                
+                <span>Course Certificates</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="/more">
+                
+                <span>More About Me</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="universal-wrapper">
+    <h1 itemprop="name">Paper note - Loop Modeling</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-09-19 04:07:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, Sep 19, 2017
+    </time>
+  </span>
+
+  
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/paper-note">paper note</a
+    >, 
+    
+    <a href="/tags/loop-modeling">loop modeling</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Paper%20note%20-%20Loop%20Modeling&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2floop-modeling%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzhaoyu.li%2fpost%2floop-modeling%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzhaoyu.li%2fpost%2floop-modeling%2f&amp;title=Paper%20note%20-%20Loop%20Modeling"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fzhaoyu.li%2fpost%2floop-modeling%2f&amp;title=Paper%20note%20-%20Loop%20Modeling"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Paper%20note%20-%20Loop%20Modeling&amp;body=https%3a%2f%2fzhaoyu.li%2fpost%2floop-modeling%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h3>Table of Contents</h3>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#paper-1-2000-modeling-of-loops-in-protein-structures">Paper 1: [2000] - Modeling of loops in protein structures</a></li>
+<li><a href="#paper-2-2006-a-fold-recognition-approach-to-loop-modeling">Paper 2: [2006] - A fold-recognition approach to loop modeling</a></li>
+<li><a href="#paper-3-2014-protein-loop-modeling-using-a-new-hybrid-energy-function-and-its-application-to-modeling-in-inaccurate-structural-environments">Paper 3: [2014] - Protein Loop Modeling Using a New Hybrid Energy Function and Its Application to Modeling in Inaccurate Structural Environments</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+<p>This article is kind of a literature review of loop modeling but not complete.</p>
+
+<h3 id="paper-1-2000-modeling-of-loops-in-protein-structures">Paper 1: [2000] - Modeling of loops in protein structures</h3>
+
+<hr />
+
+<p>First (I think) paper about loop modeling is: Modeling of loops in protein structures (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2144714/pdf/11045621.pdf" target="_blank">link</a>).</p>
+
+<p><strong>Loop Definition:</strong></p>
+
+<p>The regions outside helices and strands were defined as loops.</p>
+
+<p><img src="/img/blog/lm-1.png" alt="" />
+<em>Distribution of loop length. The bars are divided into two parts to indicate the fraction of predictions expected to be in the good and medium classes gray and in the bad class white.</em></p>
+
+<p>Thus, loops often determine the functional specificity of a given protein framework.</p>
+
+<p>Segments of up to <strong>9</strong> residues sometimes have entirely unrelated conformations in different proteins. Thus, the conformation of a given segment is also influenced by the <strong>core stem</strong> regions that span the loop and by the structure of the rest of a protein that cradles the loop. The <strong>stems</strong> are defined as the main-chain atoms that precede and follow the loop, but are not part of it. They span the loop and are part of the core of the fold.</p>
+
+<p><strong>Methods:</strong></p>
+
+<ol>
+<li><p>Ab initio</p>
+
+<p>The ab initio loop prediction is based on a conformation search or enumeration of conformations in a given environment, guided by a scoring or energy function.</p></li>
+
+<li><p>Database based</p>
+
+<p>The database approach to loop prediction consists of finding a segment of main chain that fits the two stem regions of a loop.</p></li>
+
+<li><p>Combined</p></li>
+</ol>
+
+<p><strong>Accuracy Criteria:</strong></p>
+
+<p>Two kinds of superposition: <strong>global</strong> and <strong>local</strong>.</p>
+
+<p>The $RMSD _ {local}$ was picked as the primary measure of loop accuracy. $RMSD _ {local}$ for Ca atoms is almost the same as that for all the main-chain atoms. The $RMSD _ {local}$ for N, Ca, and C is always slightly smaller than that for all the main-chain atoms.</p>
+
+<p>A good prediction has $RMSD _ {local}$ smaller than 1 Å, a bad prediction has $RMSD _ {local}$ larger than 2 Å, and a medium prediction falls between these two extremes.</p>
+
+<h3 id="paper-2-2006-a-fold-recognition-approach-to-loop-modeling">Paper 2: [2006] - A fold-recognition approach to loop modeling</h3>
+
+<hr />
+
+<p>In this paper, the author said there are two definitions of loop.</p>
+
+<ol>
+<li>Loops are segments that do not correspond to helix or strand.</li>
+<li>Loops are regions that typically occurring between secondary-structure elements, where there are insertions and deletions in the target sequence relative to that of the templates. Simply speaking, it is the gap in the templates.</li>
+</ol>
+
+<p>This paper is focus on the second definition. The basic approach is to first take out the gap region plus the stem/anchor regions on two sides from the target sequence, then find local alignments of this sequence segment as local template. Each gap has a local template selected by three criteria: 1) by solvation energy, 2) by alignment score, and 3) by the GenTHREADER neural-network score. The approach is shown in the graph below.</p>
+
+<p><img src="/img/blog/lm-2.png" alt="" /></p>
+
+<h3 id="paper-3-2014-protein-loop-modeling-using-a-new-hybrid-energy-function-and-its-application-to-modeling-in-inaccurate-structural-environments">Paper 3: [2014] - Protein Loop Modeling Using a New Hybrid Energy Function and Its Application to Modeling in Inaccurate Structural Environments</h3>
+
+<hr />
+
+<p>In many practical applications, however, the protein loops to be modeled are located in inaccurate structural environments. In this paper, a loop modeling method based on global optimization of this new energy function is tested on loop targets situated in different levels of environmental errors, ranging from experimental structures to structures perturbed in backbone as well as side chains and template-based model structures.</p>
+
+<p>Why do we need loop modeling?</p>
+
+<blockquote>
+<p>However, due to large variations in loop sequences, homologous proteins often lack structural information in the loop region, thereby making template-based approaches difficult to apply.</p>
+</blockquote>
+
+<p>Why in inaccurate environments?</p>
+
+<blockquote>
+<p>A number of ab initio loop modeling methods have been reported to show successful results in reconstructing loops in high-resolution crystal structures. However, loops of interest for practical applications are often situated in non-ideal conditions. Therefore, in the next era of loop modeling, achieving atomic-accuracy predictions in framework structures with errors will become a new challenge.</p>
+</blockquote>
+
+<p>How to mimic inaccurate environments?</p>
+
+<blockquote>
+<p>In this study, ‘global’ structure is perturbed to mimic actual situations of loop modeling in globally inaccurate frameworks.</p>
+</blockquote>
+
+<p><strong>Test Sets</strong></p>
+
+<p>There are 4 test sets with different degrees of error in the framework structure.</p>
+
+<p>First, let&rsquo;s define Set 1 and Set 2:</p>
+
+<ul>
+<li>Set 1: <strong>20 8-residue loops</strong> from Jacobson et al. and <strong>20 12-residue loops</strong> from Zhu et al.</li>
+<li>Set 2: <strong>33 12-residue loops</strong> from Fiser et al.</li>
+</ul>
+
+<p>The we can categorize the 4 tests sets as follows:</p>
+
+<ol>
+<li>Set 1 + Set 2</li>
+<li>Set 1, but with perturbed side chain structures for the residues surrounding the loops (downloaded from <a href="http://www.jacobsonlab.org/decoy.htm" target="_blank">here</a>)</li>
+<li>Set 1, but the framework structures are perturbed in the overall structure, including the backbone. (<a href="http://galaxy.seoklab.org/suppl/ps2.html" target="_blank">download link</a>)</li>
+<li>23 loop targets in template-based models</li>
+</ol>
+
+<p><strong>Results</strong></p>
+
+<p>We will only focus on the 3rd and 4th test sets, i.e. the backbone-perturbed test set and template based test set. The backbone-perturbed test set includes 20 8-residue loops and 20 12-residue loops.</p>
+
+<ul>
+<li>Results on 8-res: <a href="http://journals.plos.org/plosone/article/file?id=info%3Adoi/10.1371/journal.pone.0113811.s005&amp;type=supplementary" target="_blank">link</a></li>
+<li>Resutls on 12-res: <a href="http://journals.plos.org/plosone/article/file?id=info%3Adoi/10.1371/journal.pone.0113811.s006&amp;type=supplementary" target="_blank">link</a></li>
+<li>Results on template based: <a href="http://journals.plos.org/plosone/article/file?id=info%3Adoi/10.1371/journal.pone.0113811.s007&amp;type=supplementary" target="_blank">link</a></li>
+</ul>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="universal-wrapper">
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/paper-note-densenet/">Paper note - DenseNet</a></li>
+    
+    <li><a href="/post/paper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model/">Paper note - Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model</a></li>
+    
+    <li><a href="/post/paper-note-globally-and-locally-consistent-image-completion/">Paper note - Globally and Locally Consistent Image Completion</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://zhaoyu.li/post/paper-note-densenet/"><span
+      aria-hidden="true">&larr;</span> Paper note - DenseNet</a></li>
+    
+
+    
+    <li class="next"><a href="https://zhaoyu.li/post/auto-reverse-ssh/">A Simple Bash Script to Reverse SSH Tunnel Automatically <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="universal-wrapper">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zl-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Zhaoyu Li &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+  </body>
+</html>
+
