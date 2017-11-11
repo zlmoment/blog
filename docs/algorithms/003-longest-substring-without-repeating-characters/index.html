@@ -60,11 +60,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://zhaoyu.li/algorithms/002-add-two-numbers/">
+  <link rel="canonical" href="https://zhaoyu.li/algorithms/003-longest-substring-without-repeating-characters/">
 
   
 
-  <title>002 - Add Two Numbers | Zhaoyu Li</title>
+  <title>003 - Longest Substring Without Repeating Characters | Zhaoyu Li</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -212,21 +212,21 @@
 
 
   <div class="universal-wrapper">
-    <h1 itemprop="name">002 - Add Two Numbers</h1>
+    <h1 itemprop="name">003 - Longest Substring Without Repeating Characters</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Thu, Nov 2, 2017
+    <time datetime="2017-11-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Wed, Nov 8, 2017
     </time>
   </span>
 
   
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -241,10 +241,13 @@
     <a href="/tags/leetcode">Leetcode</a
     >, 
     
-    <a href="/tags/linkedlist">LinkedList</a
+    <a href="/tags/hashtable">HashTable</a
     >, 
     
-    <a href="/tags/math">Math</a
+    <a href="/tags/twopointers">TwoPointers</a
+    >, 
+    
+    <a href="/tags/string">String</a
     >, 
     
     <a href="/tags/medium">Medium</a
@@ -260,35 +263,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=002%20-%20Add%20Two%20Numbers&amp;url=https%3a%2f%2fzhaoyu.li%2falgorithms%2f002-add-two-numbers%2f"
+         href="https://twitter.com/intent/tweet?text=003%20-%20Longest%20Substring%20Without%20Repeating%20Characters&amp;url=https%3a%2f%2fzhaoyu.li%2falgorithms%2f003-longest-substring-without-repeating-characters%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzhaoyu.li%2falgorithms%2f002-add-two-numbers%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fzhaoyu.li%2falgorithms%2f003-longest-substring-without-repeating-characters%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzhaoyu.li%2falgorithms%2f002-add-two-numbers%2f&amp;title=002%20-%20Add%20Two%20Numbers"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fzhaoyu.li%2falgorithms%2f003-longest-substring-without-repeating-characters%2f&amp;title=003%20-%20Longest%20Substring%20Without%20Repeating%20Characters"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fzhaoyu.li%2falgorithms%2f002-add-two-numbers%2f&amp;title=002%20-%20Add%20Two%20Numbers"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fzhaoyu.li%2falgorithms%2f003-longest-substring-without-repeating-characters%2f&amp;title=003%20-%20Longest%20Substring%20Without%20Repeating%20Characters"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=002%20-%20Add%20Two%20Numbers&amp;body=https%3a%2f%2fzhaoyu.li%2falgorithms%2f002-add-two-numbers%2f">
+         href="mailto:?subject=003%20-%20Longest%20Substring%20Without%20Repeating%20Characters&amp;body=https%3a%2f%2fzhaoyu.li%2falgorithms%2f003-longest-substring-without-repeating-characters%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -312,7 +315,6 @@
 <ul>
 <li><a href="#problem">Problem</a></li>
 <li><a href="#solution">Solution</a></li>
-<li><a href="#analysis">Analysis</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -321,49 +323,74 @@
 
 <h3 id="problem">Problem</h3>
 
-<p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
+<p>Given a string, find the length of the longest substring without repeating characters.</p>
 
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+<p>Examples:</p>
 
-<p>Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)
-Output: 7 -&gt; 0 -&gt; 8</p>
+<p>Given <code>&quot;abcabcbb&quot;</code>, the answer is &ldquo;abc&rdquo;, which the length is 3.</p>
 
-<p><a href="https://leetcode.com/problems/add-two-numbers/description/" target="_blank">LINK</a></p>
+<p>Given <code>&quot;bbbbb&quot;</code>, the answer is &ldquo;b&rdquo;, with the length of 1.</p>
+
+<p>Given <code>&quot;pwwkew&quot;</code>, the answer is &ldquo;wke&rdquo;, with the length of 3. Note that the answer must be a substring, &ldquo;pwke&rdquo; is a subsequence and not a substring.</p>
+
+<p><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/description/" target="_blank">LINK</a></p>
 
 <h3 id="solution">Solution</h3>
 
-<pre><code class="language-python"># Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+<p>My solution is using a list <code>temp</code> to store the string and for each char in the <code>s</code>, I check if this char has already been in <code>temp</code>. If yes, then delete the substring before and including the char.</p>
 
-class Solution:
-    def addTwoNumbers(self, l1, l2):
+<pre><code class="language-python">class Solution:
+    def lengthOfLongestSubstring(self, s):
         &quot;&quot;&quot;
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
+        :type s: str
+        :rtype: int
         &quot;&quot;&quot;
-        carry = 0
-        dummy_head = pointer = ListNode(0)
-        while l1 or l2 or carry:
-            x = y = 0
-            if l1:
-                x = l1.val 
-                l1 = l1.next
-            if l2:
-                y = l2.val
-                l2 = l2.next
-            pointer.next = ListNode((x + y + carry) % 10)
-            carry = (x + y + carry) // 10
-            pointer = pointer.next
-        return dummy_head.next
+        length = 0
+        max_length = 0
+        temp = []
+        for l in s:
+            if l in temp:
+                if len(temp) &gt; max_length:
+                    max_length = len(temp)
+                index = temp.index(l)
+                temp = temp[index + 1:]
+                length -= index + 1
+            temp.append(l)
+            length += 1
+        return max(length, max_length)
+        
 </code></pre>
 
-<h3 id="analysis">Analysis</h3>
+<p>The following code is from the submission using the smallest running time:</p>
 
-<p>TC: $O(n)$</p>
+<pre><code class="language-python">class Solution:
+    def lengthOfLongestSubstring(self, s):
+        &quot;&quot;&quot;
+        :type s: str
+        :rtype: int
+        &quot;&quot;&quot;
+        long=&quot;&quot;
+        i=0
+        for x in s:
+            if x not in long:
+                long=long+x
+            else:
+                long=long.partition(x)[2]+x
+            if i&lt;len(long):
+                i=len(long)
+        return i
+</code></pre>
+
+<p>This solution is better than mine in the following points:</p>
+
+<ol>
+<li>Use string <code>long</code> instead of a list <code>temp</code>.</li>
+<li>Return a single value instead of a max function.</li>
+<li>Use <code>partition</code> built-in function instead of list slice.</li>
+</ol>
+
+<p><strong>str.partition(sep)</strong>
+Split the string at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator. If the separator is not found, return a 3-tuple containing the string itself, followed by two empty strings.</p>
 
     </div>
   </div>
@@ -376,6 +403,8 @@ class Solution:
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/algorithms/002-add-two-numbers/">002 - Add Two Numbers</a></li>
+    
     <li><a href="/algorithms/001-two-sum/">001 - Two Sum</a></li>
     
   </ul>
@@ -386,13 +415,10 @@ class Solution:
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://zhaoyu.li/algorithms/001-two-sum/"><span
-      aria-hidden="true">&larr;</span> 001 - Two Sum</a></li>
+    <li class="previous"><a href="https://zhaoyu.li/algorithms/002-add-two-numbers/"><span
+      aria-hidden="true">&larr;</span> 002 - Add Two Numbers</a></li>
     
 
-    
-    <li class="next"><a href="https://zhaoyu.li/algorithms/003-longest-substring-without-repeating-characters/">003 - Longest Substring Without Repeating Characters <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
