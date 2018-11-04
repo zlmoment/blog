@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contact Prediction on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/contact-prediction/</link>
+    <description>Recent content in Contact Prediction on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Thu, 05 Oct 2017 15:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/contact-prediction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Contact Prediction</title>
+      <link>https://zhaoyu.li/post/introduction-to-contact-prediction/</link>
+      <pubDate>Thu, 05 Oct 2017 15:51:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/introduction-to-contact-prediction/</guid>
+      <description>Table of Contents      Introduction Sequence-Based Approaches to Contact Prediction Contact Filtering Evaluating Contact Predictors     Most of the following materials come from article link.
+Introduction Analysis of a protein’s evolutionary history may seem irrelevant to protein structure prediction. Indeed, a protein’s folded structure depends entirely on the laws of physics and is dictated by the protein’s amino acid sequence and its environment.</description>
+    </item>
+    
+    <item>
+      <title>Paper note - Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model</title>
+      <link>https://zhaoyu.li/post/paper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model/</link>
+      <pubDate>Sun, 10 Sep 2017 00:34:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/paper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model/</guid>
+      <description>Table of Contents      Contact definition Existing contact prediction methods Intuition Input features Network Structure Conversion of sequential features to pairwise features Loss function Regularization and optimization Proteins of different lengths Data Results Discussion     For contact prediction, direct evolutionary coupling analysis (DCA). However, DCA is effective on only some proteins with a very large number of sequence homologs. Paper link is here.</description>
+    </item>
+    
+  </channel>
+</rss>

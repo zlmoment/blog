@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meshgrid on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/meshgrid/</link>
+    <description>Recent content in Meshgrid on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Tue, 10 Oct 2017 05:07:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/meshgrid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Implement Meshgrid in PyTorch</title>
+      <link>https://zhaoyu.li/post/how-to-implement-meshgrid-in-pytorch/</link>
+      <pubDate>Tue, 10 Oct 2017 05:07:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/how-to-implement-meshgrid-in-pytorch/</guid>
+      <description>In this post, I&amp;rsquo;ll show how to implement meshgrid in PyTorch.
+The following graph shows what a meshgrid would be in numpy:
+Image credit: https://www.python-course.eu/matplotlib_contour_plot.php
+If we have two tensors x and y:
+&amp;gt;&amp;gt;&amp;gt; x = torch.from_numpy(np.array([1, 2, 3, 4])) &amp;gt;&amp;gt;&amp;gt; y = torch.from_numpy(np.array([11, 22, 33, 44]))  We&amp;rsquo;d like a tensor z with shape [4, 4, 2] in which z[i, j] is the concatenation of x[i] and y[j].
+&amp;gt;&amp;gt;&amp;gt; xx = x.</description>
+    </item>
+    
+  </channel>
+</rss>

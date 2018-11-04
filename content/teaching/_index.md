@@ -21,7 +21,7 @@ I have been working as the Teaching Assistant for the following courses:
 
 - <span class="badge">CMP_SC 3330</span> **Objected Oriented Programming**
   - Professor Nickolas Wergeles
-  - <span class="btn btn-primary btn-outline btn-xs">Spring 2017</span> <span class="btn btn-primary btn-outline btn-xs">Spring 2017</span> <span class="btn btn-primary btn-outline btn-xs">Fall 2017</span>
+  - <span class="btn btn-primary btn-outline btn-xs">Spring 2017</span> <span class="btn btn-primary btn-outline btn-xs">Fall 2017</span> <span class="btn btn-primary btn-outline btn-xs">Spring 2018</span> <span class="btn btn-primary btn-outline btn-xs">Fall 2018</span>
 <div class="custom_margin"></div>
 - <span class="badge">CMP_SC 3330</span> **Objected Oriented Programming**
   - Professor Dale Musser
@@ -39,9 +39,9 @@ I have been working as the Teaching Assistant for the following courses:
   - Professor Yi Shang
   - <span class="btn btn-primary btn-outline btn-xs">Summer 2014</span>
 <div class="custom_margin"></div>
-- <span class="badge">Program</span> [Big Data Analytics Summer Experience](http://engineering.missouri.edu/cs/about/big-data-analytics-summer-experience/)
+- <span class="badge">Program</span> [Big Data Analytics Summer Experience](https://engineering.missouri.edu/departments/electrical-engineering-computer-science/summer-experience/)
   - Professor Yi Shang
-  - <span class="btn btn-primary btn-outline btn-xs">Summer 2017, 2016, 2015, 2014</span>
+  - <span class="btn btn-primary btn-outline btn-xs">Summer 2018, 2017, 2016, 2015, 2014</span>
 
 Here are some course materials I made for some of the courses:
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Sun, 20 Aug 2017 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install PyTorch on Mac with Nvidia GPU</title>
+      <link>https://zhaoyu.li/post/install-pytorch-on-mac-with-nvidia-gpu/</link>
+      <pubDate>Sun, 20 Aug 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/install-pytorch-on-mac-with-nvidia-gpu/</guid>
+      <description>Table of Contents    Download Xcode  Update and Upgrade Homebrew Install Conda Environment Install Extra Python Packages Install whatever useful for you or for your project. Verify Your Installation     Since PyTorch doesn’t provide binary package for Mac OS with GPU support, I have to compile the PyTorch from source. In this post, I will keep a note of what I did in the whole process.</description>
+    </item>
+    
+    <item>
+      <title>Compiling Tensorflow on Mac OS</title>
+      <link>https://zhaoyu.li/post/compiling-tensorflow-on-mac-os/</link>
+      <pubDate>Fri, 12 May 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/compiling-tensorflow-on-mac-os/</guid>
+      <description>Table of Contents      My Environment Configuration Install Command Line Tool 7.3 Clone the TensorFlow repository Install Bazel Install Python dependencies Install Tensorflow for GPU prerequisites Configure the installation Build the pip package Generate wheel file and install it     In the release note of tensorflow v1.1.0, there is a section about Mac GPU support:
+ TensorFlow 1.1.0 will be the last time we release a binary with Mac GPU support.</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow Installation</title>
+      <link>https://zhaoyu.li/post/tensorflow-installation/</link>
+      <pubDate>Sat, 08 Oct 2016 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/tensorflow-installation/</guid>
+      <description>Table of Contents      Install CUDA Toolkit 7.5 Installation Instructions: Install cuDNN Install pip and Virtualenv: Test the Installation     We are going to install TensorFlow on Ubuntu 14.04 x64.
+Install CUDA Toolkit 7.5 Download CUDA Toolkit 7.5 from the following address: https://developer.nvidia.com/cuda-75-downloads-archive. If your Ubuntu is 64 bit, choose target installer for Linux Ubuntu 14.04 x86_64, which is named cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb.
+Installation Instructions: After you downloading the installation file, do the following command:</description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://zhaoyu.li/research/deep-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/research/deep-learning/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+    </item>
+    
+  </channel>
+</rss>

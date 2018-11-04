@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Densenet on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/densenet/</link>
+    <description>Recent content in Densenet on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Sun, 10 Sep 2017 21:58:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/densenet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paper note - DenseNet</title>
+      <link>https://zhaoyu.li/post/paper-note-densenet/</link>
+      <pubDate>Sun, 10 Sep 2017 21:58:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/paper-note-densenet/</guid>
+      <description>Table of Contents      Brief Introduction Dense Connectivity Pooling Layers Growth Rate Bottleneck Layers Compression Memory-Efficient Implementation Implementation     There are two papers about DenseNet:
+ Densely Connected Convolutional Networks Memory-Efficient Implementation of DenseNets  Brief Introduction In DenseNet, there are direct connections between any two layers with the same feature-map size. This introduces $\frac{L\times(L+1)}{2}$ connections in an $L$-Layer network, instead of just $L$.</description>
+    </item>
+    
+  </channel>
+</rss>

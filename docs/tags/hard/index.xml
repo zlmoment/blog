@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hard on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/hard/</link>
+    <description>Recent content in Hard on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Tue, 14 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>004 - Median of Two Sorted Arrays</title>
+      <link>https://zhaoyu.li/algorithms/004-median-of-two-sorted-arrays/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/algorithms/004-median-of-two-sorted-arrays/</guid>
+      <description>Table of Contents      Problem Solution     Problem There are two sorted arrays nums1 and nums2 of size m and n respectively.
+Find the median of the two sorted arrays. The overall run time complexity should be $O(log(m+n))$.
+Example 1:
+nums1 = [1, 3] nums2 = [2] The median is 2.0  Example 2:
+nums1 = [1, 2] nums2 = [3, 4] The median is (2 + 3)/2 = 2.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,8 @@
+@inproceedings{li2017protein,
+  title={Protein Loop Modeling Using Deep Generative Adversarial Network},
+  author={Li, Zhaoyu and Nguyen, Son P and Xu, Dong and Shang, Yi},
+  booktitle={Tools with Artificial Intelligence (ICTAI), 2017 IEEE 29th International Conference on},
+  pages={1085--1091},
+  year={2017},
+  organization={IEEE}
+}

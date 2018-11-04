@@ -39,4 +39,9 @@ MUFOLD is a comprehensive platform to do protein tertiary structure prediction. 
 ### Publications
 ---
 
-To be added later.
+- Zhaoyu Li, Son Nguyen, Dong Xu, Yi Shang. ***"Protein Loop Modeling Using Deep Generative Adversarial Network."*** In Tools with Artificial Intelligence (ICTAI), 2017 IEEE 29th International Conference IEEE, 2017.
+    - [[Paper](https://ieeexplore.ieee.org/abstract/document/8372069)] [[Website](/loop_modeling_gan.html)]
+- Junlin Wang, Zhaoyu Li, Yi Shang. ***"Deep Neural Network for Evaluating the Quality of a Single Protein Model."*** In Tools with Artificial Intelligence (ICTAI), 2017 IEEE 29th International Conference IEEE, 2017. 
+- Son Nguyen, Zhaoyu Li, Yi Shang. ***"Deep Networks and Continuous Distributed Representation of Protein Sequences for Protein Quality Assessment."*** In Tools with Artificial Intelligence (ICTAI), 2017 IEEE 29th International Conference IEEE, 2017. 
+- Son Nguyen, Zhaoyu Li, Dong Xu, and Yi Shang. ***"New Deep Learning Methods for Protein Loop Modeling."*** IEEE/ACM Transactions on Computational Biology and Bioinformatics (2017).
+

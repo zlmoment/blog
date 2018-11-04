@@ -38,7 +38,7 @@ weight = 1
 
 # Welcome
 
-I am a Ph.D. student in [Distributed and Intelligent Computing Lab](http://dslsrv1.rnet.missouri.edu/) at the Computer Science Department, [University of Missouri](http://missouri.edu/), under the supervision of Professor [Yi Shang](http://dslsrv1.rnet.missouri.edu/~shangy/).
+I am a Ph.D. student in [Distributed and Intelligent Computing Lab](http://dslsrv1.rnet.missouri.edu/) at the Electrical Engineering and Computer Science (EECS) Department, [University of Missouri](http://missouri.edu/), under the supervision of Professor [Yi Shang](http://dslsrv1.rnet.missouri.edu/~shangy/).
 
 I obtained my M.S. degree in Computer Science at [University of Missouri](http://missouri.edu/) as well, and obtained my B.S. degree in Software Engineering at [Beijing Jiaotong University](http://bjtu.edu.cn/).
 

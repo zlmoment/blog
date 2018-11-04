@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://zhaoyu.li/algorithms/004-median-of-two-sorted-arrays/</loc>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://zhaoyu.li/algorithms/003-longest-substring-without-repeating-characters/</loc>
       <lastmod>2017-11-08T00:00:00+00:00</lastmod>
     </url>
@@ -330,7 +339,7 @@
     <url>
     
       <loc>https://zhaoyu.li/tags/array/</loc>
-      <lastmod>2017-10-29T10:00:00+00:00</lastmod>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -341,6 +350,16 @@
     
       <loc>https://zhaoyu.li/tags/big-data/</loc>
       <lastmod>2013-10-20T12:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://zhaoyu.li/tags/binarysearch/</loc>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -438,8 +457,28 @@
     
     <url>
     
+      <loc>https://zhaoyu.li/tags/divideandconquer/</loc>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://zhaoyu.li/tags/easy/</loc>
       <lastmod>2017-10-29T10:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://zhaoyu.li/tags/hard/</loc>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -479,7 +518,7 @@
     <url>
     
       <loc>https://zhaoyu.li/tags/leetcode/</loc>
-      <lastmod>2017-11-08T00:00:00+00:00</lastmod>
+      <lastmod>2017-11-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

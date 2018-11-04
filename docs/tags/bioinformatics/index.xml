@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioinformatics on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/bioinformatics/</link>
+    <description>Recent content in Bioinformatics on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Thu, 05 Oct 2017 15:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Contact Prediction</title>
+      <link>https://zhaoyu.li/post/introduction-to-contact-prediction/</link>
+      <pubDate>Thu, 05 Oct 2017 15:51:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/introduction-to-contact-prediction/</guid>
+      <description>Table of Contents      Introduction Sequence-Based Approaches to Contact Prediction Contact Filtering Evaluating Contact Predictors     Most of the following materials come from article link.
+Introduction Analysis of a protein’s evolutionary history may seem irrelevant to protein structure prediction. Indeed, a protein’s folded structure depends entirely on the laws of physics and is dictated by the protein’s amino acid sequence and its environment.</description>
+    </item>
+    
+    <item>
+      <title>Some Notes about BLAST&#43;</title>
+      <link>https://zhaoyu.li/post/blast-notes/</link>
+      <pubDate>Sat, 02 Sep 2017 23:57:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/blast-notes/</guid>
+      <description>Table of Contents      Make BLAST Database blastp HSP Output Explanation Parse Result Using Python References     Make BLAST Database Basic command:
+makeblastdb -in all_fasta.fasta -dbtype prot -parse_seqids -out mydb  Parameter:
+ in: the sequences file dbtype: type of database out: output db name  blastp Compare protein sequence to protein database.
+blastp -query seq.fasta -out seq.blast -db dbname -outfmt 6 -evalue 1e-5 -num_threads 8  Parameter:</description>
+    </item>
+    
+  </channel>
+</rss>

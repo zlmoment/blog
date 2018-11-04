@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac Os on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/mac-os/</link>
+    <description>Recent content in Mac Os on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Fri, 12 May 2017 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/mac-os/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compiling Tensorflow on Mac OS</title>
+      <link>https://zhaoyu.li/post/compiling-tensorflow-on-mac-os/</link>
+      <pubDate>Fri, 12 May 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/compiling-tensorflow-on-mac-os/</guid>
+      <description>Table of Contents      My Environment Configuration Install Command Line Tool 7.3 Clone the TensorFlow repository Install Bazel Install Python dependencies Install Tensorflow for GPU prerequisites Configure the installation Build the pip package Generate wheel file and install it     In the release note of tensorflow v1.1.0, there is a section about Mac GPU support:
+ TensorFlow 1.1.0 will be the last time we release a binary with Mac GPU support.</description>
+    </item>
+    
+  </channel>
+</rss>

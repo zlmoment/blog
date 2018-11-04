@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hhsuite on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/hhsuite/</link>
+    <description>Recent content in Hhsuite on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Sun, 24 Sep 2017 02:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/hhsuite/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Some Notes about HHSuite</title>
+      <link>https://zhaoyu.li/post/hhsuite_notes/</link>
+      <pubDate>Sun, 24 Sep 2017 02:51:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/hhsuite_notes/</guid>
+      <description>Table of Contents      Summary HMMs HHSuite Database Programs Usage What is HMM-HMM comparison and why is it so powerful? When can the HHsuite be useful for me? How can I verify if a database match is homologous? Should I use the -global option to build MSAs Why do I get different results using hhblits and hhsearch     The following summary is mainly from the HHsuite official user guide.</description>
+    </item>
+    
+  </channel>
+</rss>

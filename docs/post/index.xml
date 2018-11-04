@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/post/</link>
+    <description>Recent content in Posts on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Implement Meshgrid in PyTorch</title>
+      <link>https://zhaoyu.li/post/how-to-implement-meshgrid-in-pytorch/</link>
+      <pubDate>Tue, 10 Oct 2017 05:07:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/how-to-implement-meshgrid-in-pytorch/</guid>
+      <description>In this post, I&amp;rsquo;ll show how to implement meshgrid in PyTorch.
+The following graph shows what a meshgrid would be in numpy:
+Image credit: https://www.python-course.eu/matplotlib_contour_plot.php
+If we have two tensors x and y:
+&amp;gt;&amp;gt;&amp;gt; x = torch.from_numpy(np.array([1, 2, 3, 4])) &amp;gt;&amp;gt;&amp;gt; y = torch.from_numpy(np.array([11, 22, 33, 44]))  We&amp;rsquo;d like a tensor z with shape [4, 4, 2] in which z[i, j] is the concatenation of x[i] and y[j].
+&amp;gt;&amp;gt;&amp;gt; xx = x.</description>
+    </item>
+    
+    <item>
+      <title>Data Preprocessing</title>
+      <link>https://zhaoyu.li/post/data-preprocessing/</link>
+      <pubDate>Sat, 07 Oct 2017 12:58:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/data-preprocessing/</guid>
+      <description>Table of Contents      Standardization, or mean removal and variance scaling Scaling features to a range Normalization Binarization Encoding categorical features to onehot Label encoding Reference     Some common ways to do data preprocessing.
+Standardization, or mean removal and variance scaling If your data contains many outliers, scaling using the mean and variance of the data is likely to not work very well.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Contact Prediction</title>
+      <link>https://zhaoyu.li/post/introduction-to-contact-prediction/</link>
+      <pubDate>Thu, 05 Oct 2017 15:51:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/introduction-to-contact-prediction/</guid>
+      <description>Table of Contents      Introduction Sequence-Based Approaches to Contact Prediction Contact Filtering Evaluating Contact Predictors     Most of the following materials come from article link.
+Introduction Analysis of a protein’s evolutionary history may seem irrelevant to protein structure prediction. Indeed, a protein’s folded structure depends entirely on the laws of physics and is dictated by the protein’s amino acid sequence and its environment.</description>
+    </item>
+    
+    <item>
+      <title>Some Notes about HHSuite</title>
+      <link>https://zhaoyu.li/post/hhsuite_notes/</link>
+      <pubDate>Sun, 24 Sep 2017 02:51:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/hhsuite_notes/</guid>
+      <description>Table of Contents      Summary HMMs HHSuite Database Programs Usage What is HMM-HMM comparison and why is it so powerful? When can the HHsuite be useful for me? How can I verify if a database match is homologous? Should I use the -global option to build MSAs Why do I get different results using hhblits and hhsearch     The following summary is mainly from the HHsuite official user guide.</description>
+    </item>
+    
+    <item>
+      <title>A Simple Bash Script to Reverse SSH Tunnel Automatically</title>
+      <link>https://zhaoyu.li/post/auto-reverse-ssh/</link>
+      <pubDate>Tue, 19 Sep 2017 10:07:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/auto-reverse-ssh/</guid>
+      <description>While, this post will be very simple since it&amp;rsquo;s more like a note for my personal use. If you&amp;rsquo;d like to know what is the SSH Tunnel, what is the SSH port forwarding, or how to reverse SSH tunnel, please Google it.
+The following script will try to connect to another server automatically every 10 seconds. Remember to run it using tmux or screen so it can stay in the background when you are disconnected.</description>
+    </item>
+    
+    <item>
+      <title>Paper note - Loop Modeling</title>
+      <link>https://zhaoyu.li/post/loop-modeling/</link>
+      <pubDate>Tue, 19 Sep 2017 04:07:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/loop-modeling/</guid>
+      <description>Table of Contents      Paper 1: [2000] - Modeling of loops in protein structures Paper 2: [2006] - A fold-recognition approach to loop modeling Paper 3: [2014] - Protein Loop Modeling Using a New Hybrid Energy Function and Its Application to Modeling in Inaccurate Structural Environments     This article is kind of a literature review of loop modeling but not complete.
+Paper 1: [2000] - Modeling of loops in protein structures First (I think) paper about loop modeling is: Modeling of loops in protein structures (link).</description>
+    </item>
+    
+    <item>
+      <title>Paper note - DenseNet</title>
+      <link>https://zhaoyu.li/post/paper-note-densenet/</link>
+      <pubDate>Sun, 10 Sep 2017 21:58:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/paper-note-densenet/</guid>
+      <description>Table of Contents      Brief Introduction Dense Connectivity Pooling Layers Growth Rate Bottleneck Layers Compression Memory-Efficient Implementation Implementation     There are two papers about DenseNet:
+ Densely Connected Convolutional Networks Memory-Efficient Implementation of DenseNets  Brief Introduction In DenseNet, there are direct connections between any two layers with the same feature-map size. This introduces $\frac{L\times(L+1)}{2}$ connections in an $L$-Layer network, instead of just $L$.</description>
+    </item>
+    
+    <item>
+      <title>Paper note - Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model</title>
+      <link>https://zhaoyu.li/post/paper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model/</link>
+      <pubDate>Sun, 10 Sep 2017 00:34:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/paper-note-accurate-de-novo-prediction-of-protein-contact-map-by-ultra-deep-learning-model/</guid>
+      <description>Table of Contents      Contact definition Existing contact prediction methods Intuition Input features Network Structure Conversion of sequential features to pairwise features Loss function Regularization and optimization Proteins of different lengths Data Results Discussion     For contact prediction, direct evolutionary coupling analysis (DCA). However, DCA is effective on only some proteins with a very large number of sequence homologs. Paper link is here.</description>
+    </item>
+    
+    <item>
+      <title>Paper note - Globally and Locally Consistent Image Completion</title>
+      <link>https://zhaoyu.li/post/paper-note-globally-and-locally-consistent-image-completion/</link>
+      <pubDate>Mon, 04 Sep 2017 14:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/paper-note-globally-and-locally-consistent-image-completion/</guid>
+      <description>Table of Contents      Related Work Approach Training Hyperparameters     This is a (another) paper about image completion. It considers both the local continuity and the global composition of the scene, in a single framework for image completion. It also compares results with the previous methods.
+Paper link: click me
+Related Work Different approaches to image completion (inpaiting):
+ Diffusion based Patch based Others  Comparison:</description>
+    </item>
+    
+    <item>
+      <title>Some Notes about BLAST&#43;</title>
+      <link>https://zhaoyu.li/post/blast-notes/</link>
+      <pubDate>Sat, 02 Sep 2017 23:57:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/blast-notes/</guid>
+      <description>Table of Contents      Make BLAST Database blastp HSP Output Explanation Parse Result Using Python References     Make BLAST Database Basic command:
+makeblastdb -in all_fasta.fasta -dbtype prot -parse_seqids -out mydb  Parameter:
+ in: the sequences file dbtype: type of database out: output db name  blastp Compare protein sequence to protein database.
+blastp -query seq.fasta -out seq.blast -db dbname -outfmt 6 -evalue 1e-5 -num_threads 8  Parameter:</description>
+    </item>
+    
+    <item>
+      <title>Install PyTorch on Mac with Nvidia GPU</title>
+      <link>https://zhaoyu.li/post/install-pytorch-on-mac-with-nvidia-gpu/</link>
+      <pubDate>Sun, 20 Aug 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/install-pytorch-on-mac-with-nvidia-gpu/</guid>
+      <description>Table of Contents    Download Xcode  Update and Upgrade Homebrew Install Conda Environment Install Extra Python Packages Install whatever useful for you or for your project. Verify Your Installation     Since PyTorch doesn’t provide binary package for Mac OS with GPU support, I have to compile the PyTorch from source. In this post, I will keep a note of what I did in the whole process.</description>
+    </item>
+    
+    <item>
+      <title>Compiling Tensorflow on Mac OS</title>
+      <link>https://zhaoyu.li/post/compiling-tensorflow-on-mac-os/</link>
+      <pubDate>Fri, 12 May 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/compiling-tensorflow-on-mac-os/</guid>
+      <description>Table of Contents      My Environment Configuration Install Command Line Tool 7.3 Clone the TensorFlow repository Install Bazel Install Python dependencies Install Tensorflow for GPU prerequisites Configure the installation Build the pip package Generate wheel file and install it     In the release note of tensorflow v1.1.0, there is a section about Mac GPU support:
+ TensorFlow 1.1.0 will be the last time we release a binary with Mac GPU support.</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow Installation</title>
+      <link>https://zhaoyu.li/post/tensorflow-installation/</link>
+      <pubDate>Sat, 08 Oct 2016 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/tensorflow-installation/</guid>
+      <description>Table of Contents      Install CUDA Toolkit 7.5 Installation Instructions: Install cuDNN Install pip and Virtualenv: Test the Installation     We are going to install TensorFlow on Ubuntu 14.04 x64.
+Install CUDA Toolkit 7.5 Download CUDA Toolkit 7.5 from the following address: https://developer.nvidia.com/cuda-75-downloads-archive. If your Ubuntu is 64 bit, choose target installer for Linux Ubuntu 14.04 x86_64, which is named cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb.
+Installation Instructions: After you downloading the installation file, do the following command:</description>
+    </item>
+    
+    <item>
+      <title>Real-time Emotion Analysis On Twitter</title>
+      <link>https://zhaoyu.li/post/real-time-emotion-analysis-on-twitter/</link>
+      <pubDate>Sun, 20 Oct 2013 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/real-time-emotion-analysis-on-twitter/</guid>
+      <description>Table of Contents      Basic Concept Smarter Planet Information Resources Archtecture Risks References     This post is about my project of Big Data course.
+Basic Concept We use real-time big data analysis technologies to evaluate tweets about some brands and products. We will judge the emotion of tweets and decide if the tweet expresses positive, negative or no emotion about a specific brand or product.</description>
+    </item>
+    
+    <item>
+      <title>写给四年前刚开始编程的自己</title>
+      <link>https://zhaoyu.li/post/a-letter-to-myself/</link>
+      <pubDate>Thu, 21 Mar 2013 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/a-letter-to-myself/</guid>
+      <description>Table of Contents      多出去走走，开阔眼界 不要沉迷社交网络，线下的生活更加丰富 打好C语言基础，掌握并深入一门编程语言 一定要学好的课程，一定要读的书，一定要掌握的技术 广泛涉猎，但不要丧失重心 好好学习一门脚本语言 保持一颗好奇心，一颗童心     2009年9月，进入大学的第一天，开始了我正式的软件工程的学习。为什么是正式的呢，因为之前虽然也写过代码，但完全是出于兴趣，想到什么就学什么，毫无章法。后来来到了北交大，进入了据说还不错的软件学院，有了一群志同道合的朋友，一位位用心良苦的老师，踏上了一个“程序员“的冒险旅程。现在，我在美国密苏里大学读计算机硕士，回首自己走过来的这四年，错过了很多，也明白了很多，收获了很多，对软件和计算机渐渐有了自己的认识，更重要的是，发现了自己越来越多的缺陷与不足。有些当年认为用处不大而忽略掉的东西，却成了现在最最重要的东西。有时会后悔地埋怨自己当时不努力，欠下了太多的债，只能后来慢慢偿还。
+如果能够给我一次机会与四年前的我通话，我有太多的东西想对他说。然而，也许几年后再次回首，我会有另一番不同的思绪，但此时此景，我能想到这些，至少现在是对的，我不想后悔，把这些写下来，算是一种慰藉吧。
+多出去走走，开阔眼界 “世界就像一本书，不旅行的人，只读过这本书里的一页。”
+世界之大，无奇不有，不管你是否要做一个技术男，你都应该出去走走，去看更多的风景，去见更多的人，去体会更多的风情。不要做井底之蛙，这个世界到处都是精彩的事物，而有些东西如果不去亲自体会是永远无法得到的。没有人规定程序员就必须整天埋在代码中，上天赋予了程序员自由的职业特性，就一定要利用好它。程序本身就是一种美，你要时刻保持一颗欣赏美、涉猎美的心灵，才能更好地去发现和创造。眼界开阔了，心灵才不会收拘束。真的，这个世界太美好，去发现感动到哭的美。
+你要做一个旅行家里代码写得最好的人！
+不要沉迷社交网络，线下的生活更加丰富 碎片化的信息正在侵袭着我们的生活，社交网络的发明让我们能够在网上互动和交流。但你要问自己，这些真的对你有用处吗？当你和周围的朋友们沉迷于人人网微博消耗时间时，是否意识时间正在疯狂地消逝，等关闭网页的瞬间，你是否感觉到孤独感重新来袭。
+最近刚看了《黑镜》第二季，第一集中男主人公沉迷于社交网络，有一天车祸不幸去世后，有人制作了一个机器人，根据他生前在社交网络上的言行，让他继续虚拟地活下去。当然结局你应该猜到了，是的，这个人没有情感，有些东西是永远无法从社交网络上模拟的。
+线下的生活更精彩，你要多参加有益的社团、活动，多交朋友，在真实生活中维持真实的感情。
+打好C语言基础，掌握并深入一门编程语言 在后来的学习中，尤其是这几个月来在国外的学习，让我渐渐感受到一些教育上的差异。C语言作为你正式学习的第一门语言，你要做到的不是掌握语法这么简单。语言是指一种工具，帮助你理解程序设计的思想和奥秘。如果有可能的话，我希望你开始研读Linux设计思想和源码，理解其中各种设计模型和理念，因为这些才是根，当你真正了理解了这些，就会发现所有的语言都是互通的，都遵循了一个准则，即使有新的思想，你也会很快接受并融会贯通的。
+说到语言是工具，你当然要选择一门语言并试图做到精通。建议你学习C++，因为它更接近软件的底层和实质。掌握并精通它，理解它的一切，并在现有的基础上创新。Java封装的太多，你可以用Java来很好地理解面向对象的设计原则，来快速地开发一些程序，但Java会限制你的提高。当然你可以做一个Java界的大牛，但你想想，除非你特别喜欢这门语言，否则不要被它框住。
+一定要学好的课程，一定要读的书，一定要掌握的技术 这几门课程是你一定要认真学习的，因为有一天你会发现它们非常重要：“数学方面的课程”、“数据结构”、“算法设计”、“操作系统”、“数据库”和“系统级编程”等。
+这几本书不管你有多忙，都希望你能好好研读：《算法导论》，《代码大全》，《编程珠玑》外加多本文学书籍。
+这几个技术一定要用心学习，因为它们真的很有用：Linux（内核+概念+应用），数据库，汇编与编译，调试，算法设计等。
+广泛涉猎，但不要丧失重心 技术行业里永远有新的技术，不要让你的大脑僵化，要勇于去尝试新的东西，了解各个细分的行业，了解各项技术，广泛涉猎。因为只有这样，你才能发现什么是你真正喜欢的，真正感兴趣的。当你找到了自己真正的兴趣所在，你的所有研究和工作都将是快乐的。
+另外，树立一个榜样，如果你决定要做一个商人，可以选择比尔盖茨、乔布斯，如果你决定要做研究，可以选择Linus，高德纳等技术流。抱着一种学习的心态去看待，不要盲目崇拜。
+好好学习一门脚本语言 学习一门脚本语言如Python或Ruby。建议学习Python，并好好掌握它，这样可以让你更快速地与计算机交互，帮你快速解决某些问题。Python也有很多各方面的、优秀的框架，在Server开发、科学计算等方面都有很大的潜力。另外，PHP可以让你快速地架设一个小型网站，而且开源的系统也非常多。所有的这些工具，都可以在你需要的时候帮助到你。
+保持一颗好奇心，一颗童心 时刻关注业界信息，关注各个IT公司动态，关注科技新闻，关注创业，向过来人吸取经验。你看得越多，分析的越多，你对业界的信息、发展的感知就会越敏锐。不要盲目跟风网上的言论，学会自己分析。
+保持一颗童心，你才能保持一颗创造性的心，不要僵化思维，不要定势思维。这些都是需要训练的，相信你经过这些历练，一定可以有所进步。
+最后，珍惜时间，珍惜生命，做最好的自己。</description>
+    </item>
+    
+    <item>
+      <title>我的高考</title>
+      <link>https://zhaoyu.li/post/my-ncee/</link>
+      <pubDate>Tue, 05 Jun 2012 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/my-ncee/</guid>
+      <description>后天就要高考了，但这似乎已经与我无关。那段时光已经过去三年，可每每到这个时候，都会禁不住想起当年的我，当年的18班。
+时间正在将过往一丝一丝地抹去，我想在淡忘之前，再次品味一下那年的生活。
+关键字：运动场，角落，封闭的军事化管理，星空，考试那天
+运动场 每天晚饭吃过以后，大约6点半，我们会三三两两到运动场上跑步，一般是跑6圈，然后满头大汗地回到教室等待晚自修。不管天气多么热，尤其是临近6月的时候，跑道上塑胶的味道很具有冲击感，但我们都依旧坚持着。当时的想法很简单，身体好才能保证学习，而要想身体好就要锻炼。那时候跟我一起跑的通常是永明，我高三时的同桌，物理超牛逼的一个人，现在在北大学物理系。跑步完之后，有时候我们会坐在草坪上，望着天空，莫名地感叹一下高三的生活，憧憬一下美好的未来，讨论一下大学，讨论一下理想。那时候没有多余的想法，黑色的高三也没那么苦，只是觉得很充实，很带感。
+角落 后来，我们在教室的位置换成了桌子和桌子相互隔开的布局，谁也不是谁的同桌。我特别向往教室最后面的角落里的那个座位，或许只是想求得一份宁静，在聒噪的高三里，能有一片属于自己的瓦尔登湖。
+再后来，我后面的位置成了兴华的山水宝地。6月初即将高考的时候，我们还会在角落里说一些不着边的话题，整晚整晚地讨论。晚间下课，这个角落会是一帮人的美食之地，食堂买来的烧饼、馒头，超市买来的虾皮、老干妈，偶尔还会有一些新奇的玩意儿，大家热闹地讨论着，玩笑着。
+封闭的军事化管理 我们学校向河北的衡中学习，实行封闭式的军事化管理，加上我们竞争压力比较大，每个人都拼命地学习。你永远无法体会高考面对98万考生同省竞争的压力，同样的大学，对于我们的分数会高出很多。每天五点半就要起床，一直到晚上十点半，紧张、规律的生活按照预定的轨道有条不紊。
+不过我却很感谢这样的生活，磨练了那个时候的我们。就像永明走路一样，只有加快步伐，才能缩短浪费在路途中的时间。如今，永明走路的步伐依旧是那么快，我总也赶不上。
+星空 冬天的时候，每天5点半起床，走在去教室的路上，总会抬头找北斗七星的形状。清晨的感觉，就是夜的感觉；夜的感觉，就是努力的感觉。
+清晨的夜，还有停车棚的自行车，留给我了永远无法磨灭的记忆。只要抬头仰望星空，就好像回到了那个时候，再来一首周杰伦的《简单爱》，我会觉得是时光倒流。
+考试那天 靠！考试那天，我的嘴唇被蚊子咬了。听起来貌似很荒谬，但更荒谬的是，初中中考的那一天，我的嘴唇也被蚊子咬了。我一直觉得冥冥之中是谁在安排着，或许上辈子我与蚊子有仇吧，简直巧合的难以令人相信。而且，截至目前，我的嘴唇总共被蚊子咬过两次，就是这两次。
+说实话，考试那两天记忆不太深，感觉跟平常一样。语文作文搞砸了，理综没感觉，数学还不错，英语还凑合。然后，考完英语的那天下午，我们不像其他人一样，而是来到了教室估分。随后，奋斗在批阅前线的老师们发来了参考答案，那几天便疯狂地选校、填志愿。那时侯谁知道，这一选，选的是自己整个青春。</description>
+    </item>
+    
+    <item>
+      <title>近况 &amp; 忙里偷闲</title>
+      <link>https://zhaoyu.li/post/my-recent-life/</link>
+      <pubDate>Thu, 10 May 2012 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/my-recent-life/</guid>
+      <description>我觉得有必要记录一下生活。
+两年前，我对自己的生活就一个要求：“每天都要创造价值”。当时还和某某人深入探讨过，什么是价值，怎样去创造的问题。不知到某某人还记得否，当年为此想法兴高采烈，一致认为应该将其写本书，也像那谁谁一样火一把。后来遗憾的是，再也没有机会和某某人探讨这个问题了，只好躬身而行，久而久之，竟然也成了一种习惯性的思维。如果某天不能创造点价值（在自己看来），就没有勇气结束一天。不过毕竟人无完人，长期以来，这种思维导致的直接后果就是养成了晚睡的好习惯…看来必须调整一下了。
+最近几天，除了迫在眉睫的TOEFL、GRE外，其它时间全部沉浸在Tornado中。想起以前的时候，阿北坐在星巴克，用四五个月的时间创造了豆瓣，我就有种莫名的冲动。但我创造的不是豆瓣，而是一个中国的关于Python的开源社区。细节就不透露了，PyPub.com，敬请期待。
+其实我想吐槽一下Tornado，就不能有一个像样的文档吗！各种问题搞不清楚，查不到资料。还好Tornado是个轻量级的框架，还可以读一读源码找找问题。其实也是一举两得的事情，就像当我把Markdown的Python实现的源码过了一遍的时候，其语法也就了解的差不多了，也就是说，如果你把JAVA的C++源码读一遍，大抵也就可以用JAVA编程了（偷笑）。但一举两得的事往往要艰难得多，很多时候我们不愿意去做罢了。
+最近比较有感触的一句话：“世界是一本书，没旅行过的人只看到其中一页。”比起中规中矩的生活，我更喜欢有挑战的生活，更喜欢新的气息，我想去阅读这本书，因为我们只有这一次生命来阅读它。阅尽人世繁华，何尝不是一种人生。因为如此，也许我不会过早地结婚，但我会从结婚的那一天起，带我的爱人环游世界。
+嗯，忙里偷闲，简简单单寥寥数语，共勉青春年华。</description>
+    </item>
+    
+    <item>
+      <title>HTML5 之 WebSocket 通信协议介绍</title>
+      <link>https://zhaoyu.li/post/html5-websocket-communication-protocol/</link>
+      <pubDate>Sun, 15 Apr 2012 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/html5-websocket-communication-protocol/</guid>
+      <description>更新：Chrome和Firefox的WebSocket协议已更新到最新版，不再支持旧版协议。本篇文章中的握手协议和数据报文已不再适用。
+最近参与一个有关HTML5的比赛，要用到WebSocket，经过一些实验后简单总结一下WebSocket的基础用法。
+WebSocket是HTML5的一种新的协议，它是实现了浏览器与服务器的双向通讯。
+在 WebSocket API 中，浏览器和服务器只需要要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。（这两小段介绍摘自维基百科）
+WebSocket协议 WebSocket的协议非常简单，这也是其最大的优点之一。
+在客户端（如浏览器），可以利用JavaScript直接new WebSocket来实例化一个WebSocket对象，其参数格式为ws://yourdomain:port/path。WebSocket会根据这段字符串，发送Header到指定服务器端口，其数据格式大概如下：
+GET / HTTP/1.1 Origin: http://hackecho.com Cookie: __utma=99as Connection: Upgrade Host: hackecho.com Sec-WebSocket-Key: uRovscZjNol/umbTt5uKmw== Upgrade: websocket Sec-WebSocket-Version: 13  此时服务端应该返回的信息是：
+HTTP/1. WebSocket Protocol Handshake Date: Fri, Feb 17:38: GMT Connection: Upgrade Server: HackEcho Server Upgrade: WebSocket Access-Control-Allow-Origin: http://hackecho.com Access-Control-Allow-Credentials: true Sec-WebSocket-Accept: rLHCkw/SKsO9GAH/ZSFhBATDKrU= Access-Control-Allow-Headers: content-type  一旦握手成功建立连接，数据便可以通过WebSocket在服务器和客户端之间进行传送了。
+WebSocket事件 客户端在握手成功后，会触发WebSocket对象的onopen事件，告诉客户端连接已经成功建立了。
+客户端的WebSocket对象一共绑定了四个事件：
+1、onopen：连接建立时触发；
+2、onmessage：收到服务端消息时触发；
+3、onerror：连接出错时触发；
+4、onclose：连接关闭时触发；
+客户端连接的建立 这里提供一个例子来更好地理解客户端是怎样建立WebSocket连接的。例子来自于文末参考资料的第一篇文章。
+将下列代码保存为一个html文件，如websocket.html，在浏览器中打开。页面会自动向服务器（由 http://www.websocket.org 提供）连接，发送一个消息并将返回的结果显示出来，最后断开连接。
+通过其中的JavaScript代码即可看出用JS在本地建立连接的所有过程，比较简单，不再赘述，请大家看代码。</description>
+    </item>
+    
+    <item>
+      <title>那些年与编程和计算机有关的小事儿</title>
+      <link>https://zhaoyu.li/post/childhood-of-programming-and-computer/</link>
+      <pubDate>Thu, 17 Nov 2011 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/childhood-of-programming-and-computer/</guid>
+      <description>不知道写这种文章算不算回忆录，因为说回忆录未免有些早。记得初中的时候写过一本《我的小学回忆录》，将从入学一年级第一天起开始能想起来的人和事都记录了下来，如今这本未出版的手写书已不知去向，小学的记忆也越来越模糊。忽然想不如趁着现在对一些往事还尚存记忆，稍微回忆一下，也算对自己的鼓励吧。
+从小就是一个对电脑比较感兴趣的人，有时候兴趣是没有理由的，因为那时周围很多同学使用电脑仅限于聊QQ和半条命，而我却对除此之外的一些其它东西有着非常浓厚的兴趣。印象比较深的是买了很多很多的电脑书籍，当时最惬意的事情就是趴在桌前，做完作业后看那本比砖头还厚的《电脑医院》，一看就是四五个小时，后来还照葫芦画瓢写了个破坏注册表的.reg脚本，号称是我制造的第一个电脑病毒！
+由于很多电脑名词不明白，便买书、查资料。什么《注册表终极操作》、《BIOS配置指南》、《电脑上网故障1000问》、《榨干你的电脑》等等，还有全年的《电脑迷》、《电脑爱好者》、《IT新闻周刊》和不怎么看得懂的《CHIP新电脑》等。尤记得当时第一次重装系统时的激动，第一次电脑崩溃时的伤心，第一次编译通过一个程序，第一次入侵别人电脑等等的第一次，现在回想起来，真有一番体味。
+跟所有少年一样，在当时那个年龄段，都有一个黑客梦。当时最崇拜的人是陈盈豪，因为他的CIH病毒第一次颠覆了我的观念：病毒原来还可以破坏硬件设备！不过我始终没有去静下心来潜心研究那些汇编代码，不过那段经历确实小小地满足了一个少年的黑客梦，至少，成功盗过QQ，成功入侵肉鸡植入灰鸽子，成功进入某网站根目录….不过作为一个遵循黑客守则的少年，盗来的QQ一个都没动过，灰鸽子也没干过不好的事情，入侵网络更是进一下就退出了而已。
+当然，后来不再继续研究“黑客”，开始研究正道。但之前crack、0day的一些经历还是让我学到了很多很多东西。永远感激一个论坛，让我得以成长，著名的看雪论坛。
+说到后来的编程，不得不提到Delphi 7，这是成功生产出我人生中第一款像样软件的工具和语言。当时其实什么也不懂，也不知道什么是面向对象，什么是数据库，也没又编程基础，但好在Delphi 7有很多例子，结果照猫画虎竟也做出了我的处女作软件，是一款心理测试的程序，叫做“美丽预测”。当时还加了注册码，哈哈，现在想想真是有意思。当时比较火的软件站有天空和华军，于是便试着做了一些投递。只有很少一部分软件站收录了“美丽预测”，而现在，这款软件已经在网上完全找不到踪影了，不过在家里的电脑里，永远珍藏着它的所有源代码和所有版本。感谢当时用到的SetupFactory和其它各类工具。当时我初三。
+后来有一段时间我下载了最新版的Delphi，结果发现已经不再是使用Pascal了。Delphi 7还是那个永远的Delphi 7，因为它是记忆中的经典，至少对于我来说，是的。
+再后来，有了基础，便开始接触到MS的VS系列，其实这不是第一次接触VS系列，真正的第一次接触还是在小学时，传统的DOS机器上的Fox。时间太久，以至于都不记得Fox是用来干嘛的了，只记得黑屏白字和打出的一张张表格（貌似是数据表吧）。图形界面出来后，虽然带来的极大的方便，但那种没有鼠标，清一色的方正牌机器，黑屏白字和大大的显示器，还是我对电脑的第一印象呢。
+接下来，我也不知道何时起，开始迷上了互联网编程。当时傻傻地用FrontPage做了自己的“李昭谕工作室”网站，还帮同学做了“某某军事图片网站”，当时是用扫描仪一张一张将图片扫描进电脑，然后用扫描仪自带的编辑软件编辑图片（当时不会PS），然后一张张放到网页做好链接等等。当时感觉FrontPage简直就是神器啊！什么都可以做，乐此不疲。直至后来，开始学习了HTML和CSS后，才发现用记事本手动写网页才是最好的方法，FP和DW都是浮云。不过那段回忆真得很美好，当时所有做好的网站都已经打包放在家里的电脑上，偶尔去看看，看看当时傻傻的我。
+这大概就是童年时代一些与编程和计算机有关的小事儿了，当然不是全部，还有很多经典的回忆片段没有写下来，还有一些经典的工具软件没有记下来。不过还是在此缅怀一下那些逝去的经典软件，那些经典的黑客工具，还有那些逝去的记忆。</description>
+    </item>
+    
+    <item>
+      <title>驻足在马路边的秋殇（二）</title>
+      <link>https://zhaoyu.li/post/stay-in-my-mind-2/</link>
+      <pubDate>Mon, 03 Oct 2011 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/stay-in-my-mind-2/</guid>
+      <description>09年10月末，秋殇（一）发表在我的QQ空间里。后来我把它导入了这个博客，留存纪念。如今，两年过去了，我已很少再动文字。偶尔会去红袖一把，期望能添些墨香，或者仅仅是不想失去这种感觉。如今的时间不多，或者，心累了。
+秋，到了。
+少年不识愁滋味，爱上层楼，爱上层楼，为赋新词强说愁。而今识尽愁滋味，欲说还休，欲说还休，却道天凉好个秋。
+不及幼安忧国忧民，却也能体会此情此景。秋殇总能让人若有所感，泛起一些思绪，安静下来，仔细地体会。
+遗忘 一位以前很要好的哥们儿昨天打电话给我，寒暄过后，竟然问我：“你知道我是谁吧？”我说废话，你的声音变成灰也认识。朋友笑到：“好多人跟我聊半天了才问我你是谁，竟然不记得我了！这才几年啊，真是的！”
+是啊，这是第三年，可又能怪谁呢。QQ的好友列表里有这样三个分组，分别是小学、初中、高中同学，后来小学组的人只剩下了4个人，初中组的也在不断减少，高中组的还好，但陌生的名字却越来越多。后来进行好友整理，索性将三个组合为了一个组，叫做以前的朋友。删除了一些“陌生人”，看起来整洁多了。再后来，使用好友管理的“单向好友”功能，竟然发现有四十多个单向好友，意思就是有四十个人，他们的好友列表里有我，而我却没有他们。
+遗忘总在不经意间。
+什么是落寞，就是你隐身了两年，然后当你鼓起勇气上线时，却不会再有人联系你。有人说“总有一群朋友如死人一般躺在你的好友列表里，偶尔诈诈尸，时不时还会改改他们的墓志铭。”这说的就是你我吧。
+还有朋友责怪我，你回来一趟也不告诉我们一声，一起出来吃个饭，又不是不认识。我说一定会的，如果有时间的话。
+我想和那些我失去的、淡忘的朋友说声对不起。
+回忆 秋不是回忆的最好季节，因为每个季节都是回忆。
+小时候听着迈克尔杰克逊长大，后来MJ突然离世，那个时代也随之结束。我不属于那个时代，却着实让我感受到了时间的推进。为了忘却的纪念，很长一段时间再也没有听过MJ的歌。直到突然有一天，耳边想起了那熟悉的《dangerous》，我凝固了。音乐就像时光机器，能够记录一个时代的情感。伴随着音乐，我体会到了过去的感觉。对，是感觉，完全没有场景的浮现，没有一丝相似的岁岁年年，只有那熟悉而又陌生的感觉。
+去不到的地方，叫远方。
+回不到的过去，叫记忆。
+殇 幸福花开在彼岸，我在此岸遥遥观望，当忧伤化为灰烬，我就会到达那幸福的起点。
+国庆去泰山，我特意在一年前来时一个相同的地方，用相同的姿势拍了张照片。回来后我把它们合在一张照片中，朋友们都评价变了好多。
+是啊，变了好多，我自己都感受到了。
+问谷雨，是不是一个人不敢看镜子里的自己，就代表这个人对自己没有自信呢？镜子里的我让我不敢相信，这个形容枯槁的人是我吗？
+问李岩，是不是现在的我与大一时的我相比，没有当时积极活跃了呢？“嗯，是的，你低调了。”
+问自己，相由心生，外在是由内在构建的，你低沉了？
+又想起了多年前的“重生法则”，要不要再一次凤凰涅槃。
+这个秋天，有人热情饱满收获果实，可是有的人却说不够；有人感叹着在梦中徜徉心海，有人却因为这个季节而频繁失眠；有人说秋高气爽适合登高，有人却觉得很累……
+“而今识尽愁滋味，欲说还休，欲说还休，却道天凉好个秋。”
+是啊，天凉好个秋！</description>
+    </item>
+    
+    <item>
+      <title>近日小记</title>
+      <link>https://zhaoyu.li/post/my-recent-life-notes/</link>
+      <pubDate>Thu, 26 May 2011 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/my-recent-life-notes/</guid>
+      <description>有一段时间没更新博客了，主要是这段时间全部心思都在知行客团购网上。那天晚上，脑海中突然闪现出这样一个想法，便激动地无法入眠。以前也有过很多次灵感的爆发，比如今年寒假时想到的“优惯网”创意。当时我在微博上说，每天一觉醒来，上网一看，我的想法还没有人实现，便又可以安心地度过一天了。可当时忽略了重要的一点，就是执行力的问题。这也是后来在一次创新工场的宣讲会上我学习到的，执行力永远是第一位。当时有很多同学支持我，我很感动，不过，优惯网流产了，终究现在没有出现。至于将来会不会出现，我们可以wait and see，呵呵。
+想到“知行客团购网”时，我给自己下了一个目标，从网站策划，到域名和服务器以及网站程序的到位，最后到联系商家，上线第一个产品的时间，一定要控制在10天之内。如今，刚刚正好12天，商家已经初步到位，预计近一周内一定上线。鉴于所有的工作都是在课余时间完成的，所以我觉得，还行。我还有与我一同为这个网站努力的同伴，在这个过程中，收获的绝不仅仅是一个网站。
+细细数来，还有四个近在眼前的各类软件比赛摆在面前。3天后新软攀峰，一个月后百度PM大赛，海云天杯，还有需要我们一个小组共同完成的星巴克环保项目。哦忘了，还有我们的数据库大作业…如果放在以前，这样数来一定会数崩溃的，而现在，我不是一个人在战斗，有些比赛获奖与否已经不重要，重要的是过程。
+感觉时间过的好快，每天有做不完的事儿。YP前几天说心情好烦，却不知道烦得究竟是什么。我说有什么好烦的，生活多美好！其实我理解，有些时候，我们有种感觉，自己好像长大了，再也回不到小时候无忧无虑的时代了。我们的心开始有了牵挂：家人、事业、未来。有时候看着镜子里的自己，不禁会问自己：还记的5年前镜子里的你吗？你们的区别在哪儿呢？有时候会感觉自己多了一些担当，自己不再是以前那个调皮的小孩子，闯了祸有父母保护，没了钱找父母要，犯了错也无所谓。肩上的责任有了分量，人也沧桑。
+准备写日志时无言以出，写到中间，想到了很多东西，但原谅我，朋友，我不能写出来，只能欲言又止。
+这几天想深入研究一下Wordpress，还有PHP，还有一软通特别版的开发。计划多多，不求自己能全部做到，只求做好，哪怕一部分。
+博客的主机换到了北京总参机房，总算结束了国外的流亡之路，不过转移过程中数据库出了点问题，没来得及修复。不久的将来会有一次博客调整，到时候一并解决吧。剧透一下，hackecho.com的一个兄弟网站快要上线了，目前在我本地PHP环境中孵化着呢.</description>
+    </item>
+    
+    <item>
+      <title>程序员的翅膀</title>
+      <link>https://zhaoyu.li/post/fly-of-promgrammer/</link>
+      <pubDate>Tue, 10 May 2011 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/fly-of-promgrammer/</guid>
+      <description>有时候在思考一个问题，如果我们现在这些在IT领域里混迹的人出生在了100年前（ENIAC诞生于1946年），会从事些什么呢？当今很多对计算机有天赋的人是否会感到生不逢时呢？也许扎克伯格会成为宅男，拉里佩奇会去研究数学或物理，那么，我会干什么呢？（No offence）
+当然时代是要有人来开创的，比尔盖茨如果没有出生，会有另一个比尔出来的。
+前两段是小发一些感慨，今晚刷夜做一个项目，因为周四就要交了，不是我拖延，而是一个月的开发周期里，我得从头开始学几门新的技术来开发，再加上学校的课业和考试，我已经尽力了。我的同伴们也很给力，感谢他们。
+刚刚看了一篇文章，原文题目叫《每个程序员上辈子都是折翼的天使》（后附原文），有一些心得，不知对不对，当不当说，说出来合不合适，但简单总结一下吧。（个人观点，请勿跨省）
+貌似现在社会上对程序员的看法褒贬不一，不像几年前，程序员的工作是神圣的，能让黑黑的屏幕滚动几行字就很牛X的。那时计算机普及率不高，开发语言也有限，不像现在这么丰富、易学（当年要是有Python这样的脚本语言，估计扫地的老太太早出现了）。当时程序员的翅膀是硬的，受万人敬仰倒谈不上，找工作起码不是问题。如今，有一个新名词叫做“IT民工”，计算机行业的社会地位下降了：“少壮不努力，老大搞IT”、“要嫁就嫁程序员，挣得多，死得早”、“张江男现象”等等等等，读起来感觉总不是滋味。
+其实真相很简单，我们先来看一个事实：现在国外大IT来中国的企业一般都是扁平管理， 只有四层， 最上面2层， 80%是香港和台湾人，我就想不明白了，我们已经开放20多年，怎么老美还是不愿意来雇用本地人呢？ 而我们只能在最下边2层徘徊。只有一个原因，我们不缺少“IT民工”，我们缺少“IT精英”！
+想起刚来交大软件学院时卢苇院长给我们讲的：成为精英型软件工程师，这就是你们未来的目标。
+再说说中国的软件业。我没有深入涉足过，因为我还没有在IT行业里正式工作过，但从一个学生的视角来看，中国的软件产业还有很长的路要走。要创新、要规范化管理、要增强版权意识、要敢于做领头羊，而不是本着“要想超过人家的2.0，就要先学习人家的1.5”（师夷长技以制夷）的想法永远地走在人家屁股后面。
+我们有选择自己生活的权利，也就是说我们可以选择到国外工作，享受更好的待遇，或到外企等等。但我们要时刻记住一个目标，那就是为振兴中华民族而奋斗。不反对山寨，但要山寨要有意义，如果目标只是在世界最大的局域网内号称“中国的Facebook”、“中国的XXX”后再大张旗鼓上市、集资，就失去了这个产业的根本宗旨：创新是最大的驱动力！
+程序员，要好好修炼，路还很长！你的翅膀，是折翼的新奥尔良鸡翅，还是鹰的翅呢？
+附：《每个程序员上辈子都是折翼的天使》
+前段时间我去加油，93号已经涨到了7块4。 加满一箱油我要花400快钱。
+我坐在车里默默的看着油表，我在想，我要忙多久才能赚回400快钱。
+上班这玩意其实是个体力活。
+不是简单的坐在办公桌前写代码就行了，当然，其他行业也一样。
+我老婆在软件公司做文职，每天拖着疲惫的身子回家，虽然她们不用写代码，并不代表她们不用动脑。
+小小的办公室中，到处都有捕鼠器，不小心就能把自己踩上一脚大便。
+我以前呆过的一个公司，更是已经到了令人发指的地步，你按照他的吩咐办事，他说你不懂自由思考。你不按照他的吩咐办事，他说你目无纪律。
+简直就是Office的大杀器。
+这种大杀器还很多。
+（下面的几行很有意思）
+很多年前，我在中兴南研所面试。
+虽然我面试的只是小小的程序员，但是也许是中兴的面试官便秘，心情不好，他板着个脸刁难我。
+他跟我说，你们这种小角色，我见的太多了，就懂点SSH就出来乱找工作，你懂EJB嘛？
+我说我懂，并且把EJB的原理讲给他听。
+他又问我，EJB只是小儿科，你懂不懂JPA。
+我说我懂，然后又把JPA解释给他听。
+然后他又说，这些都是没水平的技术，你写没写过HTTP服务器？
+正好我那个时候在个研究院里，专门搞GlassFish，我就说了一番。
+最后，他涨红了脸说，那你懂不懂嵌入式。
+这个我真的不懂，而且我在心里说，去你妈的，我还懂怎么抽你。
+所以，上班这玩意真不容易，
+以前在日本上班的时候，每到春天，我都喜欢中午利用午休坐在樱花树下发发呆。
+在东京的日比谷公园边上我上过好几个月班，日比谷公园中午的时候，有很多流浪汉在草地上晒太阳，抓虱子。
+我就喜欢坐在离他们一段距离的小板凳上，看着他们。
+有时候我常常想，如果自己不去做IT，也许就会失业。也许跟他们一样。
+因为自己既不会拍人马屁，口才也很差。
+做个程序员其实蛮不错的，我动动脑子，虽然有时候会受气，
+但是只要想着自己没沦落到流浪的地步，就会觉得很幸福。
+所以，每一个程序员，都是一个折翼的天使！</description>
+    </item>
+    
+    <item>
+      <title>记录一些心情</title>
+      <link>https://zhaoyu.li/post/some-notes-about-myself/</link>
+      <pubDate>Sun, 05 Sep 2010 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/some-notes-about-myself/</guid>
+      <description>刚刚写的状态：“所谓的理想，所谓的现实，所谓的差距，经历了太多以前未曾有过的挫折，或许是以前太顺利了。”其实也没什么，有些心情记录一下，会更好的。
+昨天与10级的班长支书见面，又看到了去年自己的影子。依稀记得去年这个时候，学长坐在那里给我们讲述他们的生活，而如今，我们坐在了他们的位置，给满怀期待的学弟学妹们讲述我们的生活。我能理解他们的心情，脑海中浮现出去年的一张张影像，好一个时光的交错更替。8月28号为新生党员带路，9月1号为新生家长带路，无一不是回忆，时隔一年，感觉时间还没有真正开始，却早已逝去，留下的都是追忆。
+都说自古才子多寂寞，我不是才子，为何有时也会孤单？其实一个人的生活，孤单但并不孤独。
+我曾经发过一条状态：“突然一下感觉要失去什么了，猛然想抓住那些曾经错过的东西。想要个移动硬盘，想保留的东西太多了，而且记性不好，就用它存储我的记忆；想要个数码相机，想多走走拍拍，免得以后老了或是忙了，才发现自己是为了生存而生活；想要一个单车，想结伙一起外出郊游或是锻炼，免得都市粉尘吸久了体质下降了。”
+我买了相机，开始记录我的生活，在那一幅幅静态的影像中，才能看到时间的足迹，换句话说，才能看到我曾经在某一时段走过某一段路，就当是我生命的一个定格。我开始想要到处走走，去看天，去看地，去看人，去看文化与精神。独自背包走在陌生的地方，或者融入大自然，或者融入城市的喧嚣，或者去买一杯奶昔坐在麦当劳的靠窗的位子， 看着外面的人来人往，车水马龙。看着躲在路过的年轻妈妈背后的小孩子扮鬼脸， 看着稚嫩的笑脸回应自己笑容…
+我买了移动硬盘，下载了IMDB经典的电影，我选修了“外国电影观摩与鉴赏”，想学会体会一些东西，读懂一些东西。我知道在国图的三层，有一排书柜全都是影视相关的，我发现自己竟然可以抱着《暮光》的影视解析，看得如痴如醉。那里还有影视后期的所有书籍，我喜欢上了3DS MAX,喜欢上了Primier和After Effects，可悲的是，了解过特效解析再看现代电影时，竟然觉得一点都不真实，震撼又怎么样，我能说出这个特效是用C4D或Maya渲染的，那个是用Combustion或DFusion制作的，但影片的剧情带给了我们什么呢。IMDB的TOP List里，那些经典的黑白影像依旧健在…
+喜欢上了听APE和FLAC格式，喜欢上了FB2K。当音乐的细节被完全展示出来时，我知道我还缺少欣赏它的心灵，但是每个人都能够感受它，整个世界寂静了，和平之月、班得瑞和神秘园，贝多芬、恩雅和阿兰…水一样的空灵音符飘过，孤独也变得美丽，泪水也变得理所当然…我说喜欢FB2K其实自己也不知道为什么，它简洁的可怕，清汤寡水，但又丰富得可怕，灵活自如。也许只有两种人会喜欢上音乐，一种是音乐家，还有一种是像我一样，因为各种原因，心灵中失去了一样东西，却没有东西可以补得上。
+我注册了鲜果，订阅了很多关于Apple公司的信息。我不知道自己何时喜欢上了苹果，也许喜欢总是在不经意间。我关注ipod touch的信息，总有些说不清的原因，我第一时间只能将它分享在人人上，带着一丝落寞的希冀，看着它沉下去…最近两天仔细研究了电玩巴士的苹果中文网，还有远景和麦友的扩大，却也看到了苹果发烧友论坛一夜之间活生生被封的惨剧。我无语，因为搭建一个同类网站的策划已经进行了一半，迎接我的将是什么结果，是像大一时游子网的无闻而死，还是另有一番景象？我不知道，但我一定要去做，要去学，而且很多，很多。
+宿舍断电了，坚持不了多久了…胡乱记录下心情，不想强调什么。其实很寂寞，只是不想说。</description>
+    </item>
+    
+    <item>
+      <title>驻足在马路边的秋殇</title>
+      <link>https://zhaoyu.li/post/stay-in-my-mind/</link>
+      <pubDate>Sun, 01 Nov 2009 12:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/stay-in-my-mind/</guid>
+      <description>又是落叶纷飞的季节。我抬起头，让风中落叶夹杂的沧桑流过脸颊，听瑟瑟中睫毛舞动的轻扬，耳发飘浮的潇洒。
+ 来北京整整两个月了。
+校园里还是那种特有的宁静，但清爽了很多，也沉郁了很多。彳亍在湖边，感受夜的侵袭，虽然少了点雨，少了把油纸伞，但垂柳依旧撩动人儿的记忆，撩动那丁香一样的惆怅。
+逐渐习惯了在外的生活，习惯了这座大城市，习惯了每天忙忙碌碌。朋友形容我“日理万机”，我笑一笑，我很忙，但我也会偶尔在自行车上骤然停下，看着校园里为数已不多的红果树，怀念起儿时爬过的老黄铜，亲手种过的小葫芦！如今，黄叶飘飞，风过，叶子们抓住空气，扯住地面，拖住灰尘，最终却还是会远离，与地面摩擦唱着自豪的歌。
+月是故乡明。十五的月亮，被我在天安门前看得清清楚楚。故乡的歌是一枝清远的笛，总在有月亮的晚上响起。不管是余光中还是席慕容都曾醉倒、梦倒在这轮光影之中。虽然未有“近乡情更怯,不敢问来人”的恐慌，却有“身在异乡为异客，每逢佳节倍思亲”的寂寞。天安门外光影浮动，“鸟蛋”的五彩早已染了半边天，众多的行人的面容也早已淹没在闪光灯之中。那“霜”呢？那让太白彻夜难眠，魂不守舍的“霜”呢？这时应该撒在了故乡门前的树梢，撒在了房顶斑驳的瓦砾之中，撒在了街头亲人望月的面容之上了吧。
+记得国庆时期的北京是热闹的，校园是寂静的。看着空无一人的自习室，听着寂寞在唱歌，轻轻地，狠狠地。这是怎样的一种孤独呢？最牵挂的人都在远方，远方的人都在牵挂！每天都穿梭在北京城中，感受它的华贵，品读它的风骚。第一次用手触摸了长城的古石砖，触摸了王座玉石的冰冷，触摸了几百年前的怒吼与哀怨……
+校园里的路氤氲着秋天的气息，驻足在路边，银杏叶满载沧桑，却轻扬、潇洒。因为这条路上还将会有冬、春、夏……</description>
+    </item>
+    
+  </channel>
+</rss>

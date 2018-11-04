@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>String on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/string/</link>
+    <description>Recent content in String on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Wed, 08 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/string/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>003 - Longest Substring Without Repeating Characters</title>
+      <link>https://zhaoyu.li/algorithms/003-longest-substring-without-repeating-characters/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/algorithms/003-longest-substring-without-repeating-characters/</guid>
+      <description>Table of Contents      Problem Solution     Problem Given a string, find the length of the longest substring without repeating characters.
+Examples:
+Given &amp;quot;abcabcbb&amp;quot;, the answer is &amp;ldquo;abc&amp;rdquo;, which the length is 3.
+Given &amp;quot;bbbbb&amp;quot;, the answer is &amp;ldquo;b&amp;rdquo;, with the length of 1.
+Given &amp;quot;pwwkew&amp;quot;, the answer is &amp;ldquo;wke&amp;rdquo;, with the length of 3. Note that the answer must be a substring, &amp;ldquo;pwke&amp;rdquo; is a subsequence and not a substring.</description>
+    </item>
+    
+  </channel>
+</rss>

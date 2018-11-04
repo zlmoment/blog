@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Loop Modeling on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/loop-modeling/</link>
+    <description>Recent content in Loop Modeling on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Tue, 19 Sep 2017 04:07:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/loop-modeling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paper note - Loop Modeling</title>
+      <link>https://zhaoyu.li/post/loop-modeling/</link>
+      <pubDate>Tue, 19 Sep 2017 04:07:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/loop-modeling/</guid>
+      <description>Table of Contents      Paper 1: [2000] - Modeling of loops in protein structures Paper 2: [2006] - A fold-recognition approach to loop modeling Paper 3: [2014] - Protein Loop Modeling Using a New Hybrid Energy Function and Its Application to Modeling in Inaccurate Structural Environments     This article is kind of a literature review of loop modeling but not complete.
+Paper 1: [2000] - Modeling of loops in protein structures First (I think) paper about loop modeling is: Modeling of loops in protein structures (link).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/home/</link>
+    <description>Recent content in Homes on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://zhaoyu.li/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/home/about/</guid>
+      <description>Welcome I am a Ph.D. student in Distributed and Intelligent Computing Lab at the Electrical Engineering and Computer Science (EECS) Department, University of Missouri, under the supervision of Professor Yi Shang.
+I obtained my M.S. degree in Computer Science at University of Missouri as well, and obtained my B.S. degree in Software Engineering at Beijing Jiaotong University.
+My research interests include Deep Learning, Artificial Intelligence, Computational Biology, Big Data, etc.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://zhaoyu.li/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

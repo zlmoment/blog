@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Zhaoyu Li</title>
+    <link>https://zhaoyu.li/tags/data/</link>
+    <description>Recent content in Data on Zhaoyu Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Zhaoyu Li</copyright>
+    <lastBuildDate>Sat, 07 Oct 2017 12:58:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhaoyu.li/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Preprocessing</title>
+      <link>https://zhaoyu.li/post/data-preprocessing/</link>
+      <pubDate>Sat, 07 Oct 2017 12:58:00 +0000</pubDate>
+      
+      <guid>https://zhaoyu.li/post/data-preprocessing/</guid>
+      <description>Table of Contents      Standardization, or mean removal and variance scaling Scaling features to a range Normalization Binarization Encoding categorical features to onehot Label encoding Reference     Some common ways to do data preprocessing.
+Standardization, or mean removal and variance scaling If your data contains many outliers, scaling using the mean and variance of the data is likely to not work very well.</description>
+    </item>
+    
+  </channel>
+</rss>
